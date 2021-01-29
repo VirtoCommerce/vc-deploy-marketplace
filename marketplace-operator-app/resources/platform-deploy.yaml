@@ -45,6 +45,8 @@ spec:
           env:
           - name: VC_SAMPLE_DATA_DB
             value: marketplace-src
+          - name: VC_DB_COPY_PARAM
+            value: "AS COPY OF [$(VC_SAMPLE_DATA_DB)]"
           volumeMounts:
             - mountPath: "/opt/virtocommerce/platform/modules"
               name: modules-data    
