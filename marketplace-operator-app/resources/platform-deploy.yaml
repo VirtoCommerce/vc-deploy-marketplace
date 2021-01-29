@@ -16,6 +16,10 @@ spec:
         vault.hashicorp.com/agent-limits-cpu: "50m" 
     spec:
       initContainers:
+        - name: init-sqldatabase
+          env:
+          - name: VC_SAMPLE_DATA_DB
+            value: marketplace-src
         - name: init-platform
           command:
             - "/bin/sh"
@@ -42,11 +46,6 @@ spec:
               name: modules-data
       containers:
         - name: vc-platform-web
-          env:
-          - name: VC_SAMPLE_DATA_DB
-            value: marketplace-src
-          - name: VC_DB_COPY_PARAM
-            value: "AS COPY OF [$(VC_SAMPLE_DATA_DB)]"
           volumeMounts:
             - mountPath: "/opt/virtocommerce/platform/modules"
               name: modules-data    
