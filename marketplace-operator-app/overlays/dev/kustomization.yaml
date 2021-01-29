@@ -1,0 +1,61 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: develop
+namePrefix: webstore-
+commonLabels:
+  instance: webstore
+
+resources:
+- ../../resources
+
+configMapGenerator:
+- name: db-config
+  literals:
+    - VC_DB_HOST=vc-dev-dbserver.database.windows.net
+    - VC_DB=vc-dev-dbserver
+    - VC_DB_POOL=vc-dev-elasticpool
+    - VC_DB_USER=virto
+- name: overlay-config
+  literals:
+    - APPINSIGHTS_INSTRUMENTATIONKEY="1a9a3c2d-3299-4f26-8c5f-1e73b8d2d8e4"
+
+patches:
+- patch: |-
+    - op: add
+      path: /spec/template/spec/nodeSelector
+      value: 
+        agentpool: agentpool
+  target:
+    group: apps
+    version: v1
+    kind: Deployment
+
+vars:
+- name: VC_DB_HOST
+  objref:
+    kind: ConfigMap
+    name: db-config
+    apiVersion: v1
+  fieldref:
+    fieldpath: data['VC_DB_HOST']
+- name: VC_DB
+  objref:
+    kind: ConfigMap
+    name: db-config
+    apiVersion: v1
+  fieldref:
+    fieldpath: data['VC_DB']
+- name: VC_DB_POOL
+  objref:
+    kind: ConfigMap
+    name: db-config
+    apiVersion: v1
+  fieldref:
+    fieldpath: data['VC_DB_POOL']
+- name: VC_DB_USER
+  objref:
+    kind: ConfigMap
+    name: db-config
+    apiVersion: v1
+  fieldref:
+    fieldpath: data['VC_DB_USER']
