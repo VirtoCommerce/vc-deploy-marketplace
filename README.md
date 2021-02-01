@@ -1,4 +1,12 @@
 # Kubernetes Deployments
+Marketplace Operator DEV [![App Status](https://argo.govirto.com/api/badge?name=marketplace-operator-app-dev&revision=true)](https://argo.govirto.com/applications/marketplace-operator-app-dev)
+
+Marketplace Vendor DEV [![App Status](https://argo.govirto.com/api/badge?name=marketplace-vendor-app-dev&revision=true)](https://argo.govirto.com/applications/marketplace-vendor-app-dev)
+
+Marketplace Operator DEMO [![App Status](https://argo.govirto.com/api/badge?name=marketplace-operator-app-demo&revision=true)](https://argo.govirto.com/applications/marketplace-operator-app-demo) 
+
+Marketplace Vendor DEMO [![App Status](https://argo.govirto.com/api/badge?name=marketplace-vendor-app-demo&revision=true)](https://argo.govirto.com/applications/marketplace-vendor-app-demo)
+
 
 ## Overview
 
