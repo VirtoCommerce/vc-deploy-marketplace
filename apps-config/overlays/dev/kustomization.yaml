@@ -1,5 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 nameSuffix: -dev
+patchesStrategicMerge:
+- platform-deploy.yaml
+- deployment-cm.yaml
+- platform-cm.yaml
+- platform-secrets.yaml
+- ingress-https.yaml
+- ingress.yaml
 resources:
 - ../../base
