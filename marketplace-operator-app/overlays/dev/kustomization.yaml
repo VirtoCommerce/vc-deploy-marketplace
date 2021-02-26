@@ -15,6 +15,9 @@ configMapGenerator:
     - VC_DB=vc-dev-dbserver
     - VC_DB_POOL=vc-dev-elasticpool
     - VC_DB_USER=virto
+- name: vault-config
+  literals:
+    - VAULT_API_URL=http://vault-dev.vault-dev.svc.cluster.local:8200
 
 patches:
 - patch: |-
@@ -56,3 +59,10 @@ vars:
     apiVersion: v1
   fieldref:
     fieldpath: data['VC_DB_USER']
+- name: VAULT_API_URL
+  objref:
+    kind: ConfigMap
+    name: vault-config
+    apiVersion: v1
+  fieldref:
+    fieldpath: data['VAULT_API_URL']
