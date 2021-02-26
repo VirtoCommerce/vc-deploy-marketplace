@@ -78,7 +78,7 @@ spec:
           - "/bin/sh"
           - "-c"
         args:
-          - "/opt/mssql-tools/bin/sqlcmd -S $(VC_DB_HOST) -U $(VC_DB_USER)@$(VC_DB_HOST) -P '$(VC_DBSERVER_MASTER_PASSWORD)' -d $(VC_PLATFORM_SERVICE)_$(VC_NAMESPACE) -q \"CREATE USER $(VC_INSTANCE)_$(VC_NAMESPACE)_user FROM LOGIN $(VC_INSTANCE)_$(VC_NAMESPACE)_user; ALTER ROLE db_owner ADD MEMBER $(VC_INSTANCE)_$(VC_NAMESPACE)_user;\""
+          - "/opt/mssql-tools/bin/sqlcmd -S $(VC_DB_HOST) -U $(VC_DB_USER)@$(VC_DB_HOST) -P '$(VC_DBSERVER_MASTER_PASSWORD)' -d $(VC_PLATFORM_SERVICE)_$(VC_NAMESPACE) -q \"CREATE USER [$(VC_INSTANCE)_$(VC_NAMESPACE)_user] FROM LOGIN [$(VC_INSTANCE)_$(VC_NAMESPACE)_user]; ALTER ROLE db_owner ADD MEMBER $(VC_INSTANCE)_$(VC_NAMESPACE)_user;\""
         env:
           - name: VC_SAMPLE_DATA_DB
             value: webstore-platform_source  
