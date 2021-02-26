@@ -15,6 +15,9 @@ configMapGenerator:
     - VC_DB=vc-prod-dbserver
     - VC_DB_POOL=vc-prod-elasticpool
     - VC_DB_USER=virto
+- name: vault-config
+  literals:
+    - VAULT_API_URL=http://hashicorp-vault.vault.svc.cluster.local:8200
 
 patches:
 - patch: |-
@@ -26,6 +29,22 @@ patches:
     group: apps
     version: v1
     kind: Deployment
+- patch: |-
+    - op: add
+      path: /spec/csi
+      value:
+        driver: blob.csi.azure.com
+        readOnly: false
+        fsType: ext4 
+        volumeHandle: mc_cloud-platform_vc-master_eastus#fuse8d50cd269f0a49fcba0#marketplace-operator-cms-content-demo
+    - op: add
+      path: /spec/csi/volumeAttributes
+      value: 
+        containername: marketplace-operator-cms-content-demo
+        skuName: Premium_LRS
+  target:
+    version: v1
+    kind: PersistentVolume
 
 vars:
 - name: VC_DB_HOST
@@ -56,3 +75,10 @@ vars:
     apiVersion: v1
   fieldref:
     fieldpath: data['VC_DB_USER']
+- name: VAULT_API_URL
+  objref:
+    kind: ConfigMap
+    name: vault-config
+    apiVersion: v1
+  fieldref:
+    fieldpath: data['VAULT_API_URL']
