@@ -19,3 +19,5 @@ data:
   Search__ElasticSearch__Key: virtodevpass
   VirtoCommerce__Hangfire__JobStorageType: Memory
   Caching__Redis__ChannelName: "$(VC_PLATFORM_SERVICE)-$(VC_NAMESPACE)-chanel"
+  Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
+  Marketplace__StoreId: B2B-store
