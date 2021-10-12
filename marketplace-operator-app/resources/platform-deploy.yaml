@@ -18,8 +18,8 @@ spec:
       initContainers:
         - name: init-sqldatabase
           env:
-          - name: VC_SAMPLE_DATA_DB
-            value: marketplace-src
+            - name: VC_SAMPLE_DATA_DB
+              value: vcmarketplace-platform_source
       containers:
         - name: vc-platform-web
           volumeMounts:
