@@ -6,10 +6,17 @@ patchesStrategicMerge:
 - deployment-cm.yaml
 - platform-cm.yaml
 - platform-secrets.yaml
+- themes-cm.yaml
+- storefront-deploy.yaml
 
 resources:
-- ../../common-base
+- ../../common-base/platform
+- ../../common-base/storefront
+
 images:
 - name: docker.pkg.github.com/virtocommerce/vc-platform/platform
   newName: ghcr.io/virtocommerce/platform
   newTag: 3.83.0-alpha.12126-dev-4666aaa6
+- name: docker.pkg.github.com/virtocommerce/vc-storefront/storefront
+  newName: ghcr.io/virtocommerce/marketplace-storefront
+  newTag: 1.13.0-alpha.1040-dev-4942a30e
