@@ -1,4 +1,5 @@
 resources:
+- themes-cm.yaml
 - ingress-https.yaml
 - storefront-cm.yaml
 - storefront-deploy.yaml
