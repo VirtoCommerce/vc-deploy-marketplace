@@ -25,7 +25,7 @@ spec:
           volumeMounts:
             - mountPath: "/opt/virtocommerce/platform/wwwroot/cms-content"
               name: cms-content-data
-          volumes:
-            - name: cms-content-data
-              persistentVolumeClaim:
-                claimName: cms-content-volume
+      volumes:
+        - name: cms-content-data
+          persistentVolumeClaim:
+            claimName: cms-content-volume
