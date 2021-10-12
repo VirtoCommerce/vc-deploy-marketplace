@@ -14,6 +14,7 @@ resources:
   - ../../common-base/platform
   - ../../common-base/storefront
   - xapi-deploy.yaml
+  - demo-manager-deploy.yaml
 
 images:
   - name: ghcr.io/virtocommerce/platform
@@ -25,3 +26,6 @@ images:
   - name: ghcr.io/virtocommerce/demo-xapi-app
     newName: ghcr.io/virtocommerce/demo-xapi-app
     newTag: 1.0.0-alpha.16-vds-2423
+  - name: ghcr.io/virtocommerce/platform-demo-manager
+    newName: ghcr.io/virtocommerce/platform-demo-manager
+    newTag: 0.0.48
