@@ -38,7 +38,7 @@ spec:
 
       containers:
         - name: vc-storefront-web
-          image: docker.pkg.github.com/virtocommerce/vc-storefront/storefront:dev-linux-latest
+          image: ghcr.io/virtocommerce/marketplace-storefront:dev-linux-latest
           envFrom:
             - configMapRef:
                 name: storefront-cm
