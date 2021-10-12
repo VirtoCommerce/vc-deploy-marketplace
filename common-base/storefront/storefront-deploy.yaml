@@ -40,14 +40,14 @@ spec:
         - name: vc-storefront-web
           image: docker.pkg.github.com/virtocommerce/vc-storefront/storefront:dev-linux-latest
           envFrom:
-          - configMapRef:
-              name: storefront-cm
+            - configMapRef:
+                name: storefront-cm
           ports:
-          - containerPort: 80
+            - containerPort: 80
           volumeMounts:
-          - mountPath: /opt/virtocommerce/storefront/wwwroot/cms-content
-            name: cms-content-data
+            - mountPath: /opt/virtocommerce/storefront/wwwroot/cms-content
+              name: cms-content-data
       volumes:
-      - name: cms-content-data
-        persistentVolumeClaim:
-          claimName: cms-content-volume
+        - name: cms-content-data
+          persistentVolumeClaim:
+            claimName: cms-content-volume
