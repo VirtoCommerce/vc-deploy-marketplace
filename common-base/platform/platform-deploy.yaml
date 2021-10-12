@@ -109,9 +109,9 @@ spec:
         volumeMounts:
         - mountPath: "/opt/virtocommerce/platform/modules"
           name: modules-data
-      volumes:
-      - name: modules-data
-        emptyDir: {}
+        volumes:
+        - name: modules-data
+          emptyDir: {}
   strategy:
     rollingUpdate:
       maxSurge: 1
