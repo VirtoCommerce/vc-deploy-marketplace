@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: platform
 spec:
-  revisionHistoryLimit: 2
+  revisionHistoryLimit: 1
   replicas: 1
   template:
     metadata:
@@ -13,10 +13,19 @@ spec:
         vault.hashicorp.com/agent-configmap: "marketplace-operator-platform-secret-configmap"
         configmap.reloader.stakater.com/reload: "marketplace-operator-platform-cm, marketplace-operator-deployment-cm, marketplace-operator-platform-secret-configmap"
         vault.hashicorp.com/agent-requests-cpu: "25m"
-        vault.hashicorp.com/agent-limits-cpu: "50m" 
+        vault.hashicorp.com/agent-limits-cpu: "50m"
     spec:
       initContainers:
         - name: init-sqldatabase
           env:
           - name: VC_SAMPLE_DATA_DB
-            value: marketplace-src  
+            value: marketplace-src
+      containers:
+        - name: vc-platform-web
+          volumeMounts:
+            - mountPath: "/opt/virtocommerce/platform/wwwroot/cms-content"
+              name: cms-content-data
+          volumes:
+            - name: cms-content-data
+              persistentVolumeClaim:
+                claimName: cms-content-volume

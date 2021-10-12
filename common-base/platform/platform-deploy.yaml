@@ -17,7 +17,7 @@ spec:
         vault.hashicorp.com/agent-pre-populate-only: "true"
         vault.hashicorp.com/agent-configmap: $(VC_INSTANCE)-platform-secret-configmap
         vault.hashicorp.com/agent-requests-cpu: "25m"
-        vault.hashicorp.com/agent-limits-cpu: "50m"    
+        vault.hashicorp.com/agent-limits-cpu: "50m"
       labels:
         app: platform
     spec:
@@ -91,7 +91,7 @@ spec:
                 name: vc-db-pass
                 key: password
       containers:
-      - name: vc-platform-web      
+      - name: vc-platform-web
         image: docker.pkg.github.com/virtocommerce/vc-platform/platform:dev-linux-latest
         envFrom:
         - configMapRef:
@@ -111,7 +111,7 @@ spec:
           name: modules-data
       volumes:
       - name: modules-data
-        emptyDir: {}     
+        emptyDir: {}
   strategy:
     rollingUpdate:
       maxSurge: 1
