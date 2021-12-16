@@ -13,7 +13,7 @@ data:
   Search__Scope: '$(VC_PLATFORM_SERVICE)$(VC_NAMESPACE)index'
   Search__ElasticSearch__Server: 'http://search-dev-es-http.elastic-system:9200'
   Search__ElasticSearch__Key: 'virtodevpass'
-  VirtoCommerce__AllowInsecureHttp: true
+  VirtoCommerce__AllowInsecureHttp: 'true'
   VirtoCommerce__Hangfire__JobStorageType: 'Memory'
   VirtoCommerce__LicenseFilePath: 'App_Data/VirtoCommerce.lic'
   VirtoCommerce__LicensePublicKeyPath: 'App_Data/public.key'
