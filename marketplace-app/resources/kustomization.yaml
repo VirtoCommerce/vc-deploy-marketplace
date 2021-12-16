@@ -11,6 +11,7 @@ resources:
 patchesStrategicMerge:
   - platform-cm.yaml
   - platform-deploy.yaml
+  - platform-secrets.yaml
   - storefront-cm.yaml
   - storefront-deploy.yaml
   - themes-cm.yaml
