@@ -15,7 +15,7 @@ There are 2 branches:
 
 To deploy a new Virto Commerce based application for development, do the following steps in the master branch:
 
-1. Create a new folder called "{name}-app" in "master" branch (master is our dev environment).
+1. Create a new folder called "{name}-app" in "dev" branch (dev is our development environment).
 2. Add kustomization.yaml that contains the following (replace "{name}" with an app name used at step 1) under "overlays/dev" folder.
 
 ```
