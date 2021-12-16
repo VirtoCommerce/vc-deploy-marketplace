@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: marketplace-operator-app
+  name: marketplace-app
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io  
@@ -11,7 +11,7 @@ spec:
     server: 'https://aks-f783f1e0.hcp.westus.azmk8s.io:443'
   project: tenant
   source:
-    path: marketplace-operator-app/overlays/dev
+    path: marketplace-app/overlays/dev
     repoURL: https://github.com/VirtoCommerce/vc-deploy-marketplace
     targetRevision: dev
   syncPolicy:
