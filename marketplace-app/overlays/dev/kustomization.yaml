@@ -2,12 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 namespace: dev
-namePrefix: marketplace-operator-
+namePrefix: vcmarketplace-
 commonLabels:
-  instance: marketplace-operator
+  instance: vcmarketplace
 resources:
-- storage.yaml
-- ../../resources
+  - storage.yaml
+  - ../../resources
 
 configMapGenerator:
 - name: db-config

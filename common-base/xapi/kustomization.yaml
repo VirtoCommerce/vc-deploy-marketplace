@@ -1,0 +1,4 @@
+resources:
+- ingress-https.yaml
+- xapi-deploy.yaml
+- xapi-service.yaml
