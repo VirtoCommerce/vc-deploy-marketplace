@@ -1,3 +1,4 @@
 resources:
-- marketplace-operator-app.yaml
-- marketplace-vendor-app.yaml
+- marketplace-app.yaml
+# - marketplace-operator-app.yaml
+# - marketplace-vendor-app.yaml

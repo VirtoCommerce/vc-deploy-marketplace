@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-manager-nginx-deployment
+spec:
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: demo-manager
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demo-manager
+    spec:
+      containers:
+      - name: demo-manager
+        image: ghcr.io/virtocommerce/platform-demo-manager:0.0.3
+        env:
+          - name: PLATFORM_URL
+            value: "https://$(VC_PLATFORM_SERVICE).$(VC_NAMESPACE).govirto.com"
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: 64Mi
+          limits:
+            memory: 64Mi

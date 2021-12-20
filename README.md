@@ -1,11 +1,7 @@
 # Kubernetes Deployments
-Marketplace Operator DEV [![App Status](https://argo.govirto.com/api/badge?name=marketplace-operator-app-dev&revision=true)](https://argo.govirto.com/applications/marketplace-operator-app-dev)
+Marketplace DEV [![App Status](https://argo.govirto.com/api/badge?name=marketplace-app-dev&revision=true)](https://argo.govirto.com/applications/marketplace-app-dev)
 
-Marketplace Vendor DEV [![App Status](https://argo.govirto.com/api/badge?name=marketplace-vendor-app-dev&revision=true)](https://argo.govirto.com/applications/marketplace-vendor-app-dev)
-
-Marketplace Operator DEMO [![App Status](https://argo.govirto.com/api/badge?name=marketplace-operator-app-demo&revision=true)](https://argo.govirto.com/applications/marketplace-operator-app-demo) 
-
-Marketplace Vendor DEMO [![App Status](https://argo.govirto.com/api/badge?name=marketplace-vendor-app-demo&revision=true)](https://argo.govirto.com/applications/marketplace-vendor-app-demo)
+Marketplace DEMO [![App Status](https://argo.govirto.com/api/badge?name=marketplace-app-demo&revision=true)](https://argo.govirto.com/applications/marketplace-app-demo)
 
 
 ## Overview
@@ -19,7 +15,7 @@ There are 2 branches:
 
 To deploy a new Virto Commerce based application for development, do the following steps in the master branch:
 
-1. Create a new folder called "{name}-app" in "master" branch (master is our dev environment).
+1. Create a new folder called "{name}-app" in "dev" branch (dev is our development environment).
 2. Add kustomization.yaml that contains the following (replace "{name}" with an app name used at step 1) under "overlays/dev" folder.
 
 ```

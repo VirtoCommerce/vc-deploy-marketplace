@@ -15,16 +15,16 @@ spec:
         configmap.reloader.stakater.com/reload: "platform-cm,deployment-cm,platform-secret-configmap"
         vault.hashicorp.com/agent-inject: "true"
         vault.hashicorp.com/agent-pre-populate-only: "true"
-        vault.hashicorp.com/agent-configmap: $(VC_INSTANCE)-platform-secret-configmap
+        vault.hashicorp.com/agent-configmap: "$(VC_INSTANCE)-platform-secret-configmap"
         vault.hashicorp.com/agent-requests-cpu: "25m"
-        vault.hashicorp.com/agent-limits-cpu: "50m"    
+        vault.hashicorp.com/agent-limits-cpu: "50m"
       labels:
         app: platform
     spec:
       imagePullSecrets:
       - name: dockerconfigjson-github-com
       # create database in azure within a sql pool
-      initContainers: 
+      initContainers:
       - name: init-sqldatabase
         image: mcr.microsoft.com/mssql-tools
         command:
@@ -51,6 +51,13 @@ spec:
                 key: password
       - name: init-platform
         image: ghcr.io/virtocommerce/vc-deploy-containers/platform-installer:v3
+        resources:
+          limits:
+            cpu: "500m"
+            memory: 512Mi
+          requests:
+            cpu: "150m"
+            memory: 256Mi
         command:
           - "/bin/sh"
           - "-c"
@@ -91,27 +98,27 @@ spec:
                 name: vc-db-pass
                 key: password
       containers:
-      - name: vc-platform-web      
-        image: docker.pkg.github.com/virtocommerce/vc-platform/platform:dev-linux-latest
-        envFrom:
-        - configMapRef:
-            name: platform-cm
-        env:
-        - name: ConnectionStrings__VirtoCommerce
-          value: "Server=tcp:$(VC_DB_HOST),1433;Database=$(VC_PLATFORM_SERVICE)_$(VC_NAMESPACE);User ID=$(VC_INSTANCE)_$(VC_NAMESPACE)_user@$(VC_DB_HOST);Password=$(VC_DB_PASSWORD);Trusted_Connection=False;Encrypt=True;"
-        command:
-            - "/bin/bash"
-            - "-c"
-        args:
-            - "source /vault/secrets/config_base && source /vault/secrets/config_custom && dotnet VirtoCommerce.Platform.Web.dll"
-        ports:
-        - containerPort: 80
-        volumeMounts:
-        - mountPath: "/opt/virtocommerce/platform/modules"
-          name: modules-data
+        - name: vc-platform-web
+          image: ghcr.io/virtocommerce/platform:dev-linux-latest
+          envFrom:
+            - configMapRef:
+                name: platform-cm
+          env:
+            - name: ConnectionStrings__VirtoCommerce
+              value: "Server=tcp:$(VC_DB_HOST),1433;Database=$(VC_PLATFORM_SERVICE)_$(VC_NAMESPACE);User ID=$(VC_INSTANCE)_$(VC_NAMESPACE)_user@$(VC_DB_HOST);Password=$(VC_DB_PASSWORD);Trusted_Connection=False;Encrypt=True;"
+          command:
+              - "/bin/bash"
+              - "-c"
+          args:
+              - "source /vault/secrets/config_base && source /vault/secrets/config_custom && dotnet VirtoCommerce.Platform.Web.dll"
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - mountPath: "/opt/virtocommerce/platform/modules"
+              name: modules-data
       volumes:
-      - name: modules-data
-        emptyDir: {}     
+        - name: modules-data
+          emptyDir: {}
   strategy:
     rollingUpdate:
       maxSurge: 1
