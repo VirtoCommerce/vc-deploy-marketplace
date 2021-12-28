@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   - ../../common-base/platform
   - ../../common-base/storefront
-  - ../../common-base/xapi
   - ../../common-base/demo-manager
 
 
@@ -27,6 +26,3 @@ images:
 - name: ghcr.io/virtocommerce/marketplace-storefront
   newName: ghcr.io/virtocommerce/marketplace-storefront
   newTag: 1.13.0-alpha.1040-dev-4942a30e
-- name: ghcr.io/virtocommerce/demo-xapi-app
-  newName: ghcr.io/virtocommerce/demo-xapi-app
-  newTag: 1.0.0-alpha.16-vds-2423
