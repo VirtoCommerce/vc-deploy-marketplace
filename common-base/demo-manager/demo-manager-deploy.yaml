@@ -21,8 +21,3 @@ spec:
             value: "https://$(VC_PLATFORM_SERVICE).$(VC_NAMESPACE).govirto.com"
         ports:
         - containerPort: 80
-        resources:
-          requests:
-            memory: 64Mi
-          limits:
-            memory: 64Mi
