@@ -4,8 +4,7 @@ kind: Kustomization
 resources:
   - ../../common-base/platform
   - ../../common-base/storefront
-  - ../../common-base/xapi
-  - ../../common-base/demo-manager
+    - ../../common-base/demo-manager
 
 
 patchesStrategicMerge:
