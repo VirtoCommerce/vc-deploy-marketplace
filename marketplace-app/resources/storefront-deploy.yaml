@@ -12,16 +12,6 @@ spec:
         vault.hashicorp.com/agent-inject: "true"
         vault.hashicorp.com/role: "myapp"
         vault.hashicorp.com/agent-pre-populate-only: "true"
-        vault.hashicorp.com/agent-inject-secret-analyticsaccountid: "secret/b2b-qa-googleanalytics"
-        vault.hashicorp.com/agent-inject-template-analyticsaccountid: |
-          {{- with secret "secret/b2b-qa-googleanalytics" -}}
-          export GoogleAnalytics__AccountId="{{ .Data.GoogleAnalyticsAccountId }}"
-          {{- end }}
-        vault.hashicorp.com/agent-inject-secret-tagmanagercontainerid: "secret/b2b-qa-googleanalytics"
-        vault.hashicorp.com/agent-inject-template-tagmanagercontainerid: |
-          {{- with secret "secret/b2b-qa-googleanalytics" -}}
-          export VirtoCommerce__AppSettings__GoogleTagManager__ContainerId="{{ .Data.GoogleTagManagerContainerId }}"
-          {{- end }}
         reloader.stakater.com/search: "true"
         vault.hashicorp.com/agent-requests-cpu: "25m"
         vault.hashicorp.com/agent-limits-cpu: "50m"
