@@ -10,3 +10,6 @@ data:
   SnapshotCollectorConfiguration__IsEnabled: 'false'
   VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: '$(VC_STOREFRONT_SERVICE).$(VC_NAMESPACE).govirto.com'
   VirtoCommerce__SendAccountConfirmation: 'true'
+  VirtoCommerce__Endpoint__Password: 'Test123!'
+  VirtoCommerce__Endpoint__UserName: 'admin'
+  VirtoCommerce__Endpoint__Url: 'http://$(VC_PLATFORM_SERVICE)'
