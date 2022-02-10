@@ -158,7 +158,7 @@ data:
     {
         "Id": "VirtoCommerce.MarketplaceOperator",
         "Repository": "VirtoCommerce/vc-module-marketplace-vendor",
-        "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceOperator_1.0.0-alpha.50.zip"
+        "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceOperator_1.0.0-alpha.52.zip"
     }
 
    ]
