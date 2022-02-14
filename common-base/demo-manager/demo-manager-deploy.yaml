@@ -18,11 +18,6 @@ spec:
         image: ghcr.io/virtocommerce/platform-demo-manager:0.0.3
         env:
           - name: PLATFORM_URL
-            value: "https://$(VC_PLATFORM_SERVICE).$(VC_NAMESPACE).govirto.com"
+            value: "http://$(VC_PLATFORM_SERVICE).$(VC_NAMESPACE).svc.cluster.local"
         ports:
         - containerPort: 80
-        resources:
-          requests:
-            memory: 64Mi
-          limits:
-            memory: 64Mi

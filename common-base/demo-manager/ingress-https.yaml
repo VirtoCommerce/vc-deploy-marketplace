@@ -33,3 +33,7 @@ spec:
           serviceName: platform
           servicePort: 80
         path: /pushNotificationHub
+      - backend:
+          serviceName: platform
+          servicePort: 80
+        path: /Modules
