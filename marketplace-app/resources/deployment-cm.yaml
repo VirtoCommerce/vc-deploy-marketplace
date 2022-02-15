@@ -93,7 +93,7 @@ data:
     {
       "Id": "VirtoCommerce.Pricing",
       "Repository": "VirtoCommerce/vc-module-pricing",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-pricing/releases/download/3.200.0/VirtoCommerce.Pricing_3.200.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-pricing/releases/download/3.201.0/VirtoCommerce.Pricing_3.201.0.zip"
     },
     {
       "Id": "VirtoCommerce.Search",
@@ -113,7 +113,7 @@ data:
     {
       "Id": "VirtoCommerce.Store",
       "Repository": "VirtoCommerce/vc-module-store",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-store/releases/download/3.200.0/VirtoCommerce.Store_3.200.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-store/releases/download/3.201.0/VirtoCommerce.Store_3.201.0.zip"
     },
     {
       "Id": "VirtoCommerce.Tax",
