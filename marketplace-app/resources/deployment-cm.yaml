@@ -8,17 +8,17 @@ data:
     {
       "Id": "VirtoCommerce.Assets",
       "Repository": "VirtoCommerce/vc-module-assets",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Assets_3.200.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-assets/releases/download/3.200.0/VirtoCommerce.Assets_3.200.0.zip"
     },
     {
       "Id": "VirtoCommerce.FileSystemAssets",
       "Repository": "VirtoCommerce/vc-module-filesystem-assets",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.FileSystemAssets_3.200.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-filesystem-assets/releases/download/3.200.0/VirtoCommerce.FileSystemAssets_3.200.0.zip"
     },
     {
       "Id": "VirtoCommerce.AzureBlobAssets",
       "Repository": "VirtoCommerce/vc-module-azureblob-assets",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.AzureBlobAssets_3.200.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-azureblob-assets/releases/download/3.200.0/VirtoCommerce.AzureBlobAssets_3.200.0.zip"
     },
     {
       "Id": "VirtoCommerce.BulkActionsModule",
