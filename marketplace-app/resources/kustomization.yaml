@@ -19,7 +19,7 @@ patchesStrategicMerge:
 images:
 - name: ghcr.io/virtocommerce/platform
   newName: ghcr.io/virtocommerce/platform
-  newTag: 3.88.0-alpha.12150-dev-3c8be629
+  newTag: 3.204.0-master-b63db860
 - name: ghcr.io/virtocommerce/platform-demo-manager
   newName: ghcr.io/virtocommerce/platform-demo-manager
   newTag: 0.0.116
