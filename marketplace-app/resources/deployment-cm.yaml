@@ -6,6 +6,21 @@ data:
   modules.json: |
    [
     {
+      "Id": "VirtoCommerce.Assets",
+      "Repository": "VirtoCommerce/vc-module-assets",
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Assets_3.200.0.zip"
+    },
+    {
+      "Id": "VirtoCommerce.FileSystemAssets",
+      "Repository": "VirtoCommerce/vc-module-filesystem-assets",
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.FileSystemAssets_3.200.zip"
+    },
+    {
+      "Id": "VirtoCommerce.AzureBlobAssets",
+      "Repository": "VirtoCommerce/vc-module-azureblob-assets",
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.AzureBlobAssets_3.200.0.zip"
+    },
+    {
       "Id": "VirtoCommerce.BulkActionsModule",
       "Repository": "VirtoCommerce/vc-module-bulk-actions",
       "PackageUrl": "https://github.com/VirtoCommerce/vc-module-bulk-actions/releases/download/3.200.0/VirtoCommerce.BulkActionsModule_3.200.0.zip"
