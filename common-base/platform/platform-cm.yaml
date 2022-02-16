@@ -13,6 +13,7 @@ data:
   Search__Scope: '$(VC_PLATFORM_SERVICE)$(VC_NAMESPACE)index'
   Search__ElasticSearch__Server: 'https://elasticsearch-dev.govirto.com'
   Search__ElasticSearch__Key: 'virtodevpass'
+  Search__OrderFullTextSearchEnabled: "true"
   VirtoCommerce__AllowInsecureHttp: 'true'
   VirtoCommerce__Hangfire__JobStorageType: 'Memory'
   VirtoCommerce__LicenseFilePath: 'App_Data/VirtoCommerce.lic'
