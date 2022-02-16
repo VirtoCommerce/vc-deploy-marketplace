@@ -7,7 +7,5 @@ metadata:
 data:
   MERCURY_THEME_URL: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.4-alpha.193.zip
   MERCURY_THEME_LOCATION: /mnt/cms-content/Themes/B2B-store
-  B2B_THEME_URL: https://vc3prerelease.blob.core.windows.net/packages/vc-marketplace-theme-1.14.0-alpha.1704.zip
-  B2B_THEME_LOCATION: /mnt/cms-content/Themes/B2B-store_old
   ASSETS_URL: https://vcbacpac.blob.core.windows.net/dac-packages/marketplace_assets_1.zip
   ASSETS_LOCATION: /mnt/cms-content/assets
