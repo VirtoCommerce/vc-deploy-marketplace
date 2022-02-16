@@ -7,6 +7,9 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/custom-http-errors: "404"
     nginx.ingress.kubernetes.io/default-backend: $(VC_INSTANCE)-demo-manager
+    nginx.ingress.kubernetes.io/proxy-buffering: on
+    nginx.ingress.kubernetes.io/proxy-buffers-number: 16
+    nginx.ingress.kubernetes.io/proxy-buffer-size: 60m
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
