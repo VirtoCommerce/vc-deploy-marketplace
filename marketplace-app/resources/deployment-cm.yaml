@@ -126,6 +126,11 @@ data:
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.CatalogCsvImportModule_3.200.0-pr-89.zip"
     },
     {
+      "Id": "VirtoCommerce.CustomerReviews",
+      "Repository": "VirtoCommerce/vc-module-customer-review",
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-customer-review/releases/download/3.200.0/VirtoCommerce.CustomerReviews_3.200.0.zip"
+    },
+    {
       "Id": "VirtoCommerce.WebHooks",
       "Repository": "VirtoCommerce/vc-module-webhooks",
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.WebHooks_3.200.0-pr-51.zip"
