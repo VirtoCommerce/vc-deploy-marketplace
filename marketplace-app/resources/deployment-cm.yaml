@@ -71,11 +71,6 @@ data:
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Inventory_3.200.0-pr-101.zip"
     },
     {
-      "Id": "VirtoCommerce.LuceneSearch",
-      "Repository": "VirtoCommerce/vc-module-lucene-search",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.LuceneSearch_3.200.0-pr-23.zip"
-    },
-    {
       "Id": "VirtoCommerce.Marketing",
       "Repository": "VirtoCommerce/vc-module-marketing",
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Marketing_3.200.0-pr-168.zip"
@@ -121,54 +116,14 @@ data:
       "PackageUrl": "https://github.com/VirtoCommerce/vc-module-store/releases/download/3.201.0/VirtoCommerce.Store_3.201.0.zip"
     },
     {
-      "Id": "VirtoCommerce.Subscription",
-      "Repository": "VirtoCommerce/vc-module-subscription",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Subscription_3.200.0-pr-62.zip"
-    },
-    {
       "Id": "VirtoCommerce.Tax",
       "Repository": "VirtoCommerce/vc-module-tax",
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Tax_3.200.0-pr-26.zip"
     },
     {
-      "Id": "VirtoCommerce.CustomerReviews",
-      "Repository": "VirtoCommerce/vc-module-customer-review",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-customer-review/releases/download/3.200.0/VirtoCommerce.CustomerReviews_3.200.0.zip"
-    },
-    {
-      "Id": "VirtoCommerce.AuthorizeNet",
-      "Repository": "VirtoCommerce/vc-module-Authorize.Net",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.AuthorizeNet_3.200.0-pr-27.zip"
-    },
-    {
-      "Id": "VirtoCommerce.AvalaraTax",
-      "Repository": "VirtoCommerce/vc-module-avatax",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.AvalaraTax_3.200.0-pr-37.zip"
-    },
-    {
-      "Id": "VirtoCommerce.CatalogPersonalization",
-      "Repository": "VirtoCommerce/vc-module-catalog-personalization",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.CatalogPersonalization_3.200.0-pr-54.zip"
-    },
-    {
-      "Id": "VirtoCommerce.CatalogPublishing",
-      "Repository": "VirtoCommerce/vc-module-catalog-publishing",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.CatalogPublishing_3.200.0-pr-42.zip"
-    },
-    {
       "Id": "VirtoCommerce.CatalogCsvImportModule",
       "Repository": "VirtoCommerce/vc-module-catalog-csv-import",
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.CatalogCsvImportModule_3.200.0-pr-89.zip"
-    },
-    {
-      "Id": "VirtoCommerce.Quote",
-      "Repository": "VirtoCommerce/vc-module-quote",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-quote/releases/download/3.200.0/VirtoCommerce.Quote_3.200.0.zip"
-    },
-    {
-      "Id": "VirtoCommerce.DynamicAssociations",
-      "Repository": "VirtoCommerce/vc-module-dynamic-associations",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.DynamicAssociationsModule_3.200.0-pr-26.zip"
     },
     {
       "Id": "VirtoCommerce.WebHooks",

@@ -25,4 +25,4 @@ images:
   newTag: 0.0.120
 - name: ghcr.io/virtocommerce/marketplace-storefront
   newName: ghcr.io/virtocommerce/storefront
-  newTag: 6.0.0-alpha.870-dev-216b708f
+  newTag: 6.0.0-alpha.871-dev-0c42febd

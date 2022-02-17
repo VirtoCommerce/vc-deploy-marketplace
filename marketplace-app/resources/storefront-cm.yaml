@@ -10,4 +10,3 @@ data:
   SnapshotCollectorConfiguration__IsEnabled: 'false'
   VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: '$(VC_STOREFRONT_SERVICE).$(VC_NAMESPACE).govirto.com'
   VirtoCommerce__SendAccountConfirmation: 'true'
-  VirtoCommerce__DefaultStore: B2B-store
