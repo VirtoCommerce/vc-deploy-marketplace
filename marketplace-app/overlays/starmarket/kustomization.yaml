@@ -9,6 +9,9 @@ resources:
   - storage.yaml
   - ../../resources
 
+patchesStrategicMerge:
+  - ingress-https.yaml
+
 configMapGenerator:
 - name: db-config
   literals:
