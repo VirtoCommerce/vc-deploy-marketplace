@@ -138,7 +138,7 @@ data:
     {
       "Id": "VirtoCommerce.ExperienceApi",
       "Repository": "VirtoCommerce/vc-module-experience-api",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.ExperienceApi_3.203.0-pr-280.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-experience-api/releases/download/3.204.0/VirtoCommerce.ExperienceApi_3.204.0.zip"
     },
     {
       "Id": "VirtoCommerce.ProfileExperienceApiModule",
@@ -152,7 +152,7 @@ data:
     },
     {
       "Id": "VirtoCommerce.MarketplaceOperator",
-      "Repository": "VirtoCommerce/vc-module-marketplace-vendor",
+      "Repository": "VirtoCommerce/vc-module-marketplace-operator",
       "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceOperator_3.200.0-alpha.55.zip"
     }
    ]
