@@ -22,7 +22,7 @@ images:
   newTag: 3.207.0-master-e8af1b78
 - name: ghcr.io/virtocommerce/platform-demo-manager
   newName: ghcr.io/virtocommerce/platform-demo-manager
-  newTag: 0.1.6
+  newTag: 0.1.7
 - name: ghcr.io/virtocommerce/marketplace-storefront
   newName: ghcr.io/virtocommerce/storefront
   newTag: 6.0.0-alpha.871-dev-0c42febd
