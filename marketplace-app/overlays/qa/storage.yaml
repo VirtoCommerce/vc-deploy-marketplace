@@ -13,7 +13,7 @@ spec:
     fsType: ext4 
     volumeHandle: mc_aks-cluster-dev_aks-dev_westus#fusefdb1fe6c3d1c4b1d814#marketplace-operator-cms-content-qa
     volumeAttributes:
-      containername: marketplace-operator-cms-content-dev
+      containername: marketplace-operator-cms-content-qa
       skuName: Premium_LRS
 
   persistentVolumeReclaimPolicy: Retain
