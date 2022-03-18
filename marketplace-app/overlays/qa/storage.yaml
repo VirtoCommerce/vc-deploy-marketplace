@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: cms-content-qa
+  name: cms-content
 spec:
   accessModes:
   - ReadWriteMany
@@ -30,5 +30,5 @@ spec:
   resources:
     requests:
       storage: 200Mi
-  volumeName: cms-content-qa
+  volumeName: cms-content
   storageClassName: "blob-premium"
