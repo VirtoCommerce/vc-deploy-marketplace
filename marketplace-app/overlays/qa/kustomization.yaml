@@ -9,6 +9,9 @@ resources:
   - storage.yaml
   - ../../resources
 
+patchesStrategicMerge:
+  - platform-deploy.yaml
+
 configMapGenerator:
 - name: db-config
   literals:
@@ -22,14 +25,6 @@ configMapGenerator:
 
 patches:
 - patch: |-
-    - op: replace
-      path: /metadata/name
-      value: cms-content-qa
-  target:
-    version: v1
-    kind: PersistentVolume
-
-- patch: |-
     - op: add
       path: /spec/template/spec/nodeSelector
       value: 
@@ -38,13 +33,6 @@ patches:
     group: apps
     version: v1
     kind: Deployment
-- patch: |-
-    - op: replace
-      path: /spec/volumeName
-      value: marketplace-cms-content-volume-qa
-  target:
-    version: v1
-    kind: PersistentVolumeClaim
 
 vars:
 - name: VC_DB_HOST
