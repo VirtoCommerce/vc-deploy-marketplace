@@ -10,6 +10,8 @@ data:
   Marketplace__MasterCatalogId: '5aa50aaea01544529a6b6d576a668439'
   Marketplace__StoreId: 'B2B-store'
   Marketplace__VendorPortalUrl: 'https://vendor-portal.$(VC_NAMESPACE).govirto.com/'
+  Search__ElasticSearch__Server: https://elasticsearch-dev.govirto.com
+  Search__OrderFullTextSearchEnabled: 'true'
   Notifications__DefaultSender: 'azure_25da07ed75daacae20578a7a7dc58541@azure.com'
   Notifications__Gateway: 'SendGrid'
   Notifications__SmsDefaultSender: '+17012510519'
