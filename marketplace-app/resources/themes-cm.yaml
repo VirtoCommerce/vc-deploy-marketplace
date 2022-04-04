@@ -5,7 +5,7 @@ metadata:
   annotations:
     reloader.stakater.com/match: "true"
 data:
-  B2B_THEME_URL: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.6-starmarket-pr-2-24e8c8b3.zip
+  B2B_THEME_URL: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.7-starmarket-alpha.1722-starmarket.zip
   B2B_THEME_LOCATION: /mnt/cms-content/Themes/B2B-store
   ASSETS_URL: https://vcbacpac.blob.core.windows.net/dac-packages/marketplace_assets_1.zip
   ASSETS_LOCATION: /mnt/cms-content/assets
