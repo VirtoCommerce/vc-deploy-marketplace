@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-buffers-number: 16
     nginx.ingress.kubernetes.io/proxy-buffer-size: 64k
     nginx.ingress.kubernetes.io/client-body-buffer-size: 60m
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/rewrite-target: /$1$2
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
@@ -27,16 +27,16 @@ spec:
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /api(.*)
+        path: /(api)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /connect/token(.*)
+        path: /(connect\/token)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /pushNotificationHub(.*)
+        path: /(pushNotificationHub)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /Modules(.*)
+        path: /(Modules)(.*)
