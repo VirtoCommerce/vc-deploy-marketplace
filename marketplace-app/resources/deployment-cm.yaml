@@ -53,7 +53,7 @@ data:
     {
       "Id": "VirtoCommerce.ElasticSearch",
       "Repository": "VirtoCommerce/vc-module-elastic-search",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-elastic-search/releases/download/3.202.0/VirtoCommerce.ElasticSearch_3.202.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-elastic-search/releases/download/3.203.0/VirtoCommerce.ElasticSearch_3.203.0.zip"
     },
     {
       "Id": "VirtoCommerce.Export",
@@ -83,7 +83,7 @@ data:
     {
       "Id": "VirtoCommerce.Orders",
       "Repository": "VirtoCommerce/vc-module-order",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-order/releases/download/3.202.0/VirtoCommerce.Orders_3.202.0.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Orders_3.203.0-pr-287.zip"
     },
     {
       "Id": "VirtoCommerce.Payment",
@@ -98,7 +98,7 @@ data:
     {
       "Id": "VirtoCommerce.Search",
       "Repository": "VirtoCommerce/vc-module-search",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-search/releases/download/3.202.0/VirtoCommerce.Search_3.202.0.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Search_3.205.0-pr-64.zip"
     },
     {
       "Id": "VirtoCommerce.Shipping",
@@ -138,7 +138,7 @@ data:
     {
       "Id": "VirtoCommerce.ExperienceApi",
       "Repository": "VirtoCommerce/vc-module-experience-api",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-experience-api/releases/download/3.204.0/VirtoCommerce.ExperienceApi_3.204.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-experience-api/releases/download/3.205.0/VirtoCommerce.ExperienceApi_3.205.0.zip"
     },
     {
       "Id": "VirtoCommerce.ProfileExperienceApiModule",
@@ -148,11 +148,11 @@ data:
     {
       "Id": "VirtoCommerce.MarketplaceVendor",
       "Repository": "VirtoCommerce/vc-module-marketplace-vendor",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceVendor_3.200.0-alpha.139.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceVendor_3.200.0-alpha.151.zip"
     },
     {
       "Id": "VirtoCommerce.MarketplaceOperator",
       "Repository": "VirtoCommerce/vc-module-marketplace-operator",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceOperator_3.200.0-alpha.55.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceOperator_3.200.0-alpha.61.zip"
     }
    ]

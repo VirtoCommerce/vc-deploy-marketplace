@@ -30,7 +30,7 @@ spec:
             - "source /vault/secrets/config_base && source /vault/secrets/config_custom && dotnet VirtoCommerce.Platform.Web.dll"
           resources:
             requests:
-              memory: "256Mi"
+              memory: "512Mi"
             limits:
               memory: "1024Mi"
           volumeMounts:

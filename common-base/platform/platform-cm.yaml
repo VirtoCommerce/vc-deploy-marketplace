@@ -11,8 +11,9 @@ data:
   Caching__Redis__ChannelName: '$(VC_PLATFORM_SERVICE)-$(VC_NAMESPACE)-chanel'
   Search__Provider: 'ElasticSearch'
   Search__Scope: '$(VC_PLATFORM_SERVICE)$(VC_NAMESPACE)index'
-  Search__ElasticSearch__Server: 'http://search-dev-es-http.elastic-system:9200'
+  Search__ElasticSearch__Server: 'https://elasticsearch-dev.govirto.com'
   Search__ElasticSearch__Key: 'virtodevpass'
+  Search__OrderFullTextSearchEnabled: "true"
   VirtoCommerce__AllowInsecureHttp: 'true'
   VirtoCommerce__Hangfire__JobStorageType: 'Memory'
   VirtoCommerce__LicenseFilePath: 'App_Data/VirtoCommerce.lic'
