@@ -5,12 +5,11 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/custom-http-errors: "404"
-    nginx.ingress.kubernetes.io/default-backend: $(VC_INSTANCE)-demo-manager
     nginx.ingress.kubernetes.io/proxy-buffering: on
     nginx.ingress.kubernetes.io/proxy-buffers-number: 16
     nginx.ingress.kubernetes.io/proxy-buffer-size: 64k
     nginx.ingress.kubernetes.io/client-body-buffer-size: 60m
+    nginx.ingress.kubernetes.io/rewrite-target: /$1$2
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
@@ -24,20 +23,20 @@ spec:
       - backend:
           serviceName: demo-manager
           servicePort: 80
-        path: /
+        path: /(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /api
+        path: /(api)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /connect/token
+        path: /(connect\/token)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /pushNotificationHub
+        path: /(pushNotificationHub)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /Modules
+        path: /(Modules)(.*)
