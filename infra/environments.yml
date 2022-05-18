@@ -1,0 +1,41 @@
+- name: vcmp-main
+  platform:
+    imageRepository: virtopaasregistry.azurecr.io/vcmp/platform
+    imageTag: 3.204.0
+    tier: enterprise
+    config:
+      VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
+    secretConfig: {}
+  storefront:
+    imageRepository: virtopaasregistry.azurecr.io/vcmp/storefront
+    imageTag: 6.0
+    themeUrl: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.4-pr-141-ad6ad179.zip
+    themeName: B2B-store
+    config:
+      VirtoCommerce__Endpoint__Password: store
+      VirtoCommerce__DefaultStore: B2B-store
+      SnapshotCollectorConfiguration__IsEnabled: false
+    secretConfig: {}
+  ingress: {}
+  customApps:
+    app1:
+      enabled: true
+      type: standalone
+      probePath: /
+      name: demo-manager
+      imageRepository: virtopaasregistry.azurecr.io/vcmp/platform-demo-manager
+      imageTag: 0.1.18
+      ingressPath: /(.*)
+      platformPath:
+      - /(api)(.*)
+      - /(connect\/token)(.*)
+      - /(pushNotificationHub)(.*)
+      - /(Modules)(.*)
+      storefrontPath: []
+      servicePath: []
+    app2:
+      enabled: false
+      platformPath: []
+      storefrontPath: []
+      servicePath: []
+  protectedParameters: []

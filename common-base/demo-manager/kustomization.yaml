@@ -1,4 +1,0 @@
-resources:
-- ingress-https.yaml
-- demo-manager-deploy.yaml
-- demo-manager-service.yaml

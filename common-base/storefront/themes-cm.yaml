@@ -1,9 +1,0 @@
-kind: ConfigMap
-apiVersion: v1
-metadata:
-  name: themes-cm
-data:
-  B2B_THEME_URL:  
-  B2B_THEME_LOCATION: 
-  ASSETS_URL: 
-  ASSETS_LOCATION: 
