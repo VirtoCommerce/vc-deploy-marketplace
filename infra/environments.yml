@@ -1,20 +1,21 @@
 - name: vcmp-main
   platform:
     imageRepository: virtopaasregistry.azurecr.io/vcmp/platform
-    imageTag: 3.204.0
     tier: enterprise
     config:
       VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
+      APPINSIGHTS_INSTRUMENTATIONKEY: b662e81f-08a8-4f19-868d-18bfae3e320c
     secretConfig: {}
   storefront:
     imageRepository: virtopaasregistry.azurecr.io/vcmp/storefront
     imageTag: 6.0
-    themeUrl: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.4-pr-141-ad6ad179.zip
+    themeUrl: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.4-c1c9cb.zip
     themeName: B2B-store
     config:
       VirtoCommerce__Endpoint__Password: store
       VirtoCommerce__DefaultStore: B2B-store
       SnapshotCollectorConfiguration__IsEnabled: false
+      APPINSIGHTS_INSTRUMENTATIONKEY: 5bf326fe-600a-4f94-abac-76c9617c31c8
     secretConfig: {}
   ingress: {}
   customApps:
@@ -38,4 +39,5 @@
       platformPath: []
       storefrontPath: []
       servicePath: []
-  protectedParameters: []
+  protectedParameters:
+    - platform.image.tag
