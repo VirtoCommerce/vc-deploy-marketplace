@@ -1,4 +1,4 @@
-name: virtostart gitops
+name: marketplace gitops
 
 on:
   workflow_dispatch:
