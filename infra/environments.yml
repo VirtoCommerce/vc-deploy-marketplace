@@ -8,8 +8,8 @@
     secretConfig: {}
   storefront:
     imageRepository: virtopaasregistry.azurecr.io/vcmp/storefront
-    imageTag: 6.0
-    themeUrl: https://vc3prerelease.blob.core.windows.net/packages/client-app-0.0.4-c1c9cb.zip
+    imageTag: 6.0.0-master-8ab17e63
+    themeUrl: ttps://github.com/VirtoCommerce/vc-theme-b2b-vue/releases/download/1.0.0/vc-theme-b2b-vue-1.0.0.zip
     themeName: B2B-store
     config:
       VirtoCommerce__Endpoint__Password: store
