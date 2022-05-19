@@ -55,12 +55,8 @@
             "BlobName": "VirtoCommerce.WebHooks_3.200.0-pr-51.zip"
           },
           {
-            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.153.zip"
-          },
-          {
-            "BlobName": "VirtoCommerce.MarketplaceOperator_3.200.0-alpha.61.zip"
-          } 
-          
+            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.180.zip"
+          }          
         ],
         "Container": "packages",
         "ServiceUri": "https://vc3prerelease.blob.core.windows.net"
