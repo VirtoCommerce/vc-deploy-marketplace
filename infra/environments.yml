@@ -5,6 +5,17 @@
     config:
       VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
       APPINSIGHTS_INSTRUMENTATIONKEY: b662e81f-08a8-4f19-868d-18bfae3e320c
+      Marketplace__MasterCatalogId: 'adeefff5-fe8f-416b-ad34-58b09d1f0a25'
+      Marketplace__StoreId: 'B2B-store'
+      Marketplace__VendorPortalUrl: 'https://vendor-portal.$(VC_NAMESPACE).govirto.com/'
+      Search__OrderFullTextSearchEnabled: 'true'
+      Notifications__DefaultSender: 'azure_25da07ed75daacae20578a7a7dc58541@azure.com'
+      Notifications__Gateway: 'SendGrid'
+      Notifications__SmsDefaultSender: '+17012510519'
+      Notifications__Smtp__EnableSsl: 'False'
+      Notifications__Smtp__Host: 'smtp.sendgrid.net'
+      Notifications__Smtp__Login: 'apikey'
+      Notifications__Smtp__Port: '587'
     secretConfig: {}
   storefront:
     imageRepository: virtopaasregistry.azurecr.io/vcmp/storefront
