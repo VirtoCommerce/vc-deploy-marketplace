@@ -24,20 +24,20 @@ spec:
       - backend:
           serviceName: demo-manager
           servicePort: 80
-        path: /
+        path: /(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /api
+        path: /(api)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /connect/token
+        path: /(connect\/token)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /pushNotificationHub
+        path: /(pushNotificationHub)(.*)
       - backend:
           serviceName: platform
           servicePort: 80
-        path: /Modules
+        path: /(Modules)(.*)
