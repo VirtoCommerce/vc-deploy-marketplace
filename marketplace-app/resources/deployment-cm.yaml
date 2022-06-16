@@ -108,7 +108,7 @@ data:
     {
       "Id": "VirtoCommerce.Pricing",
       "Repository": "VirtoCommerce/vc-module-pricing",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-pricing/releases/download/3.204.0/VirtoCommerce.Pricing_3.204.0.zip"
+      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-pricing/releases/download/3.205.0/VirtoCommerce.Pricing_3.205.0.zip"
     },
     {
       "Id": "VirtoCommerce.ProfileExperienceApiModule",
@@ -148,6 +148,6 @@ data:
     {
       "Id": "VirtoCommerce.MarketplaceVendor",
       "Repository": "VirtoCommerce/vc-module-marketplace-vendor",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceVendor_3.200.0-alpha.184.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.MarketplaceVendor_3.200.0-alpha.192.zip"
     }
    ]
