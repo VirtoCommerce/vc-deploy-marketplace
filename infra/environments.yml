@@ -28,7 +28,7 @@
       type: standalone
       probePath: /
       name: demo-manager
-      imageRepository: virtopaasregistry.azurecr.io/vcmp/platform-demo-manager
+      imageRepository: ghcr.io/virtocommerce/platform-demo-manager
       imageTag: 1.0.8
       ingressPath: /(.*)
       platformPath:
