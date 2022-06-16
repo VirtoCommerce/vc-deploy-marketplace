@@ -29,7 +29,7 @@
       probePath: /
       name: demo-manager
       imageRepository: virtopaasregistry.azurecr.io/vcmp/platform-demo-manager
-      imageTag: 0.1.18
+      imageTag: 1.0.8
       ingressPath: /(.*)
       platformPath:
       - /(api)(.*)
