@@ -153,6 +153,6 @@ data:
     {
       "Id": "VirtoCommerce.Import",
       "Repository": "VirtoCommerce/vc-module-import",
-      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Import_3.200.0-alpha.26.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Import_3.200.0-alpha.28.zip"
     }
    ]
