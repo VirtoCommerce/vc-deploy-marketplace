@@ -9,7 +9,7 @@
       APPINSIGHTS_INSTRUMENTATIONKEY: b662e81f-08a8-4f19-868d-18bfae3e320c
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vendor-portal.$(VC_NAMESPACE).govirto.com/
+      Marketplace__VendorPortalUrl: https://vcmp-main-demo-manager.paas.govirto.com/
       Search__OrderFullTextSearchEnabled: true
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
     secretConfig: {}
