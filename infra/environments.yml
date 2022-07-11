@@ -12,7 +12,14 @@
       Marketplace__VendorPortalUrl: https://vcmp-main-demo-manager.paas.govirto.com/
       Search__OrderFullTextSearchEnabled: true
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
-    secretConfig: {}
+      Notifications__Gateway: SendGrid
+      Notifications__SmsDefaultSender: +17012510519
+      Notifications__Smtp__EnableSsl: False
+      Notifications__Smtp__Host: smtp.sendgrid.net
+      Notifications__Smtp__Login: apikey
+      Notifications__Smtp__Port: 587
+    secretConfig:
+      Notifications__SendGrid__ApiKey: sendkey
   storefront:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
     themeName: B2B-store
