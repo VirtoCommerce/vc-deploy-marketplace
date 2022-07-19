@@ -19,3 +19,5 @@ data:
   Notifications__Smtp__Host: 'smtp.sendgrid.net'
   Notifications__Smtp__Login: 'apikey'
   Notifications__Smtp__Port: '587'
+  Marketplace__d365__BaseUrl: 'https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com'
+  Marketplace__d365__Tenant: '16d0ce93-4497-4fa4-89dd-bc2c74bdf65e'
