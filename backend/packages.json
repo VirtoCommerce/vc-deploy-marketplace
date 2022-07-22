@@ -4,7 +4,7 @@
         "Name": "AzureBlob",
         "Modules": [
           {
-            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.265.zip"
+            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.266.zip"
           },
           {
             "BlobName": "VirtoCommerce.Orders_3.209.0-pr-293.zip"
