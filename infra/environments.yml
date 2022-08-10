@@ -43,7 +43,7 @@
       probePath: /
       name: demo-manager
       imageRepository: ghcr.io/virtocommerce/platform-demo-manager
-      imageTag: 1.0.13
+      imageTag: 1.0.17
       ingressPath: /(.*)
       platformPath:
       - /(api)(.*)
