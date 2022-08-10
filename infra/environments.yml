@@ -34,7 +34,7 @@
       APPINSIGHTS_INSTRUMENTATIONKEY: 5bf326fe-600a-4f94-abac-76c9617c31c8
     secretConfig: {}
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-theme-b2b-vue/releases/download/1.3.0/vc-theme-b2b-vue-1.3.0.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-marketplace-1.3.0-marketplace-alpha.1721.zip
   ingress: {}
   customApps:
     app1:
@@ -43,7 +43,7 @@
       probePath: /
       name: demo-manager
       imageRepository: ghcr.io/virtocommerce/platform-demo-manager
-      imageTag: 1.0.10
+      imageTag: 1.0.13
       ingressPath: /(.*)
       platformPath:
       - /(api)(.*)
