@@ -19,10 +19,10 @@ patchesStrategicMerge:
 images:
 - name: ghcr.io/virtocommerce/platform
   newName: ghcr.io/virtocommerce/platform
-  newTag: 3.225.0-master-2627ad23
+  newTag: 3.243.0-master-4f338a63
 - name: ghcr.io/virtocommerce/platform-demo-manager
   newName: ghcr.io/virtocommerce/platform-demo-manager
-  newTag: 1.0.18
+  newTag: 1.0.19
 - name: ghcr.io/virtocommerce/marketplace-storefront
   newName: ghcr.io/virtocommerce/storefront
-  newTag: 6.1.0-master-39aa5bae
+  newTag: 6.3.0-master-b3b442ed
