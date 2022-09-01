@@ -4,13 +4,10 @@
         "Name": "AzureBlob",
         "Modules": [
           {
-            "BlobName": "VirtoCommerce.Orders_3.209.0-pr-293.zip"
+            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.302.zip"
           },
           {
-            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.297.zip"
-          },
-          {
-            "BlobName": "VirtoCommerce.Import_3.200.0-alpha.28.zip"
+            "BlobName": "VirtoCommerce.Import_3.200.0-alpha.33.zip"
           }
         ],
         "Container": "packages",
@@ -24,7 +21,7 @@
         "Modules": [
           {
             "Id": "VirtoCommerce.Assets",
-            "Version": "3.200.0"
+            "Version": "3.201.0"
           },
           {
             "Id": "VirtoCommerce.AzureBlobAssets",
@@ -36,7 +33,7 @@
           },
           {
             "Id": "VirtoCommerce.Core",
-            "Version": "3.200.0"
+            "Version": "3.204.0"
           },
           {
             "Id": "VirtoCommerce.Cart",
@@ -44,7 +41,7 @@
           },
           {
             "Id": "VirtoCommerce.Catalog",
-            "Version": "3.221.0"
+            "Version": "3.232.0"
           },
           {
             "Id": "VirtoCommerce.CatalogCsvImportModule",
@@ -52,11 +49,11 @@
           },
           {
             "Id": "VirtoCommerce.Content",
-            "Version": "3.203.0"
+            "Version": "3.204.0"
           },
           {
             "Id": "VirtoCommerce.Customer",
-            "Version": "3.205.0"
+            "Version": "3.212.0"
           },
           {
             "Id": "VirtoCommerce.CustomerReviews",
@@ -64,11 +61,11 @@
           },
           {
             "Id": "VirtoCommerce.ElasticSearch",
-            "Version": "3.205.0"
+            "Version": "3.206.0"
           },
           {
             "Id": "VirtoCommerce.ExperienceApi",
-            "Version": "3.216.0"
+            "Version": "3.228.0"
           },
           {
             "Id": "VirtoCommerce.Export",
@@ -80,11 +77,11 @@
           },
           {
             "Id": "VirtoCommerce.ImageTools",
-            "Version": "3.203.0"
+            "Version": "3.205.0"
           },
           {
             "Id": "VirtoCommerce.Inventory",
-            "Version": "3.203.0"
+            "Version": "3.206.0"
           },
           {
             "Id": "VirtoCommerce.Marketing",
@@ -92,35 +89,39 @@
           },
           {
             "Id": "VirtoCommerce.Notifications",
-            "Version": "3.204.0"
-          },
-          {
-            "Id": "VirtoCommerce.Payment",
-            "Version": "3.204.0"
-          },
-          {
-            "Id": "VirtoCommerce.Pricing",
-            "Version": "3.206.0"
-          },
-          {
-            "Id": "VirtoCommerce.ProfileExperienceApiModule",
             "Version": "3.209.0"
           },
           {
+            "Id": "VirtoCommerce.Orders",
+            "Version": "3.214.0"
+          },
+          {
+            "Id": "VirtoCommerce.Payment",
+            "Version": "3.205.0"
+          },
+          {
+            "Id": "VirtoCommerce.Pricing",
+            "Version": "3.210.0"
+          },
+          {
+            "Id": "VirtoCommerce.ProfileExperienceApiModule",
+            "Version": "3.215.0"
+          },
+          {
             "Id": "VirtoCommerce.Search",
-            "Version": "3.207.0"
+            "Version": "3.209.0"
           },
           {
             "Id": "VirtoCommerce.Shipping",
-            "Version": "3.200.0"
-          },
-          {
-            "Id": "VirtoCommerce.Sitemaps",
             "Version": "3.201.0"
           },
           {
+            "Id": "VirtoCommerce.Sitemaps",
+            "Version": "3.206.0"
+          },
+          {
             "Id": "VirtoCommerce.Store",
-            "Version": "3.204.0"
+            "Version": "3.206.0"
           },
           {
             "Id": "VirtoCommerce.Tax",
@@ -134,5 +135,5 @@
       }
     ],
     "ManifestVersion": "2.0",
-    "PlatformVersion": "3.225.0"
+    "PlatformVersion": "3.243.0"
   }
