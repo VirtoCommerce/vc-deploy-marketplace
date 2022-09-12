@@ -63,7 +63,7 @@ data:
     {
       "Id": "VirtoCommerce.ExperienceApi",
       "Repository": "VirtoCommerce/vc-module-experience-api",
-      "PackageUrl": "https://github.com/VirtoCommerce/vc-module-experience-api/releases/download/3.228.0/VirtoCommerce.ExperienceApi_3.228.0.zip"
+      "PackageUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.ExperienceApi_3.229.0-pr-339.zip"
     },
     {
       "Id": "VirtoCommerce.Export",
