@@ -33,7 +33,7 @@
       SnapshotCollectorConfiguration__IsEnabled: false
       APPINSIGHTS_INSTRUMENTATIONKEY: 5bf326fe-600a-4f94-abac-76c9617c31c8
     secretConfig: {}
-    themes:
+  themes:
       B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.7.0-alpha.415.zip
   ingress: {}
   customApps:
@@ -43,7 +43,7 @@
       probePath: /
       name: demo-manager
       imageRepository: ghcr.io/virtocommerce/platform-demo-manager
-      imageTag: 1.0.19
+      imageTag: 1.0.21
       ingressPath: /(.*)
       platformPath:
       - /(api)(.*)
