@@ -3,7 +3,6 @@
   servicePlan: S2
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
-    tier: enterprise
     config:
       VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_1.zip
       APPINSIGHTS_INSTRUMENTATIONKEY: b662e81f-08a8-4f19-868d-18bfae3e320c
@@ -26,14 +25,13 @@
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
-    themeName: B2B-store
     config:
       VirtoCommerce__Endpoint__Password: store
       VirtoCommerce__DefaultStore: B2B-store
       SnapshotCollectorConfiguration__IsEnabled: false
       APPINSIGHTS_INSTRUMENTATIONKEY: 5bf326fe-600a-4f94-abac-76c9617c31c8
     secretConfig: {}
-  themes:
+    themes:
       B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.7.0-alpha.415.zip
   ingress: {}
   customApps:
