@@ -5,25 +5,24 @@ on:
   push:
     paths:
       - 'infra/**'
-    branches: [ paas ]
+    branches: 
+      - 'vcmp-*'
 
 jobs:
   gitops:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    
-    - name: Install vc-build
-      run: |
-        dotnet tool install --global VirtoCommerce.GlobalTool
-    
-    - name: Update app
-      run: |
-        vc-build UpdateCloudEnvironment -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN }} -ArgoConfigFile $ENV_FILE -CloudUrl https://cloud.prod.govirto.com
-      env:
-        ENV_FILE: './infra/environments.yml'
-        ARGO_SERVER: https://argo.govirto.com
-        TOKEN: ${{ secrets.VCMP_TOKEN }}
+      - uses: actions/checkout@v3
+   
+      - name: Install vc-build
+        run: |
+          dotnet tool install --global VirtoCommerce.GlobalTool
+
+      - name: Update app
+        run: |
+          vc-build UpdateCloudEnvironment -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN }} -ArgoConfigFile $ENV_FILE -CloudUrl https://cloud.prod.govirto.com
+        env:
+          ENV_FILE: './infra/environments.yml'
+          ARGO_SERVER: https://argocd.govirto.com
+          TOKEN: ${{ secrets.VCMP_TOKEN }}
