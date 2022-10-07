@@ -9,7 +9,7 @@ on:
       - 'vcmp-*'
 
 jobs:
-  gitops:
+  gitops-publish-infra:
     runs-on: ubuntu-20.04
 
     steps:

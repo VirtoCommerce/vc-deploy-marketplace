@@ -9,7 +9,7 @@ on:
       - 'vcmp-*'
 
 jobs:
-  gitops:
+  gitops-publish-platform:
     runs-on: ubuntu-22.04
     env:
       DOCKER_LOGIN: vcmp-token
