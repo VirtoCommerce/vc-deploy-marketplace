@@ -9,7 +9,7 @@
         "Modules": [
           {
             "Id": "VirtoCommerce.MarketplaceVendor",
-            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.326.zip"
+            "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.331.zip"
           },
           {
             "Id": "VirtoCommerce.Import",
@@ -47,7 +47,7 @@
           },
           {
             "Id": "VirtoCommerce.Catalog",
-            "Version": "3.234.0"
+            "Version": "3.240.0"
           },
           {
             "Id": "VirtoCommerce.CatalogCsvImportModule",
