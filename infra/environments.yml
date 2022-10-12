@@ -1,4 +1,4 @@
-- name: vcmp-main
+- name: vcmp-dev
   gitops: true
   servicePlan: S2
   platform:
