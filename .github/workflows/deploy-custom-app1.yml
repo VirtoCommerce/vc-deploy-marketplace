@@ -20,44 +20,43 @@ jobs:
       ARGO_APP_NAME: ${{ github.ref_name }}
 
     steps:
-    - run: echo "Temporary disabled"
-    # - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
     
-    # - name: Install vc-build
-    #   run: |
-    #     dotnet tool install --global VirtoCommerce.GlobalTool
+    - name: Install vc-build
+      run: |
+        dotnet tool install --global VirtoCommerce.GlobalTool
     
-    # - name: Get custom app version
-    #   id: platform-version
-    #   run: |
-    #     echo "CUSTOM_APP_TAG=$(cat ./custom-app1/image.json | jq -r '.Tag')" >> $GITHUB_ENV
-    #     echo "CUSTOM_APP_REPO=$(cat ./custom-app1/image.json | jq -r '.Repository')" >> $GITHUB_ENV
+    - name: Get custom app version
+      id: platform-version
+      run: |
+        echo "CUSTOM_APP_TAG=$(cat ./custom-app1/image.json | jq -r '.Tag')" >> $GITHUB_ENV
+        echo "CUSTOM_APP_REPO=$(cat ./custom-app1/image.json | jq -r '.Repository')" >> $GITHUB_ENV
 
-    # - name: Docker Login to ghcr.io
-    #   uses: azure/docker-login@v1
-    #   with:
-    #     login-server: ghcr.io
-    #     username: vc-ci
-    #     password: ${{ secrets.VC_CI_TOKEN }}
+    - name: Docker Login to ghcr.io
+      uses: azure/docker-login@v1
+      with:
+        login-server: ghcr.io
+        username: vc-ci
+        password: ${{ secrets.VC_CI_TOKEN }}
 
-    # - name: Pull vc-workflow image from private registry
-    #   run: |
-    #     docker pull ${{ env.CUSTOM_APP_REPO }}:${{ env.CUSTOM_APP_TAG }}
+    - name: Pull vc-workflow image from private registry
+      run: |
+        docker pull ${{ env.CUSTOM_APP_REPO }}:${{ env.CUSTOM_APP_TAG }}
     
-    # - name: Docker Login to ${{ env.CONTAINER_REGISTRY }}
-    #   uses: azure/docker-login@v1
-    #   with:
-    #     login-server: ${{ env.CONTAINER_REGISTRY }}
-    #     username: ${{ env.DOCKER_LOGIN }}
-    #     password: ${{ env.DOCKER_PASSWORD }}
+    - name: Docker Login to ${{ env.CONTAINER_REGISTRY }}
+      uses: azure/docker-login@v1
+      with:
+        login-server: ${{ env.CONTAINER_REGISTRY }}
+        username: ${{ env.DOCKER_LOGIN }}
+        password: ${{ env.DOCKER_PASSWORD }}
 
-    # - name: Publish vc-workflow image to the Virto Cloud
-    #   run: |
-    #     docker tag ${{ env.CUSTOM_APP_REPO }}:${{ env.CUSTOM_APP_TAG }} ${{ env.IMAGE_REPOSITORY }}:${{ env.CUSTOM_APP_TAG }}
-    #     docker push ${{ env.IMAGE_REPOSITORY }}:${{ env.CUSTOM_APP_TAG }}
+    - name: Publish vc-workflow image to the Virto Cloud
+      run: |
+        docker tag ${{ env.CUSTOM_APP_REPO }}:${{ env.CUSTOM_APP_TAG }} ${{ env.IMAGE_REPOSITORY }}:${{ env.CUSTOM_APP_TAG }}
+        docker push ${{ env.IMAGE_REPOSITORY }}:${{ env.CUSTOM_APP_TAG }}
 
-    # - name: Update app
-    #   run: |
-    #     vc-build SetHelmParameter -ArgoServer https://argocd.govirto.com -ArgoAppName ${{ env.ARGO_APP_NAME }} -ArgoToken ${{ env.ARGO_TOKEN }} -HelmParameters custom.app1.image.tag=$TAG
-    #   env:
-    #     TAG: ${{ env.CUSTOM_APP_TAG }}
+    - name: Update app
+      run: |
+        vc-build SetHelmParameter -ArgoServer https://argocd.govirto.com -ArgoAppName ${{ env.ARGO_APP_NAME }} -ArgoToken ${{ env.ARGO_TOKEN }} -HelmParameters custom.app1.image.tag=$TAG
+      env:
+        TAG: ${{ env.CUSTOM_APP_TAG }}
