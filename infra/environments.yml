@@ -37,7 +37,7 @@
       VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-store.paas.govirto.com/
       VirtoCommerce__SendAccountConfirmation: 'true'
 
-      VirtoCommerce__Endpoint__Password: Pa$$w0rd
+      VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
 
     secretConfig: {}
