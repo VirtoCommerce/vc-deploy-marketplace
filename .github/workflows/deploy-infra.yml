@@ -1,4 +1,4 @@
-name: marketplace gitops
+name: Cloud infra deployment
 
 on:
   workflow_dispatch:

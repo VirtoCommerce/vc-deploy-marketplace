@@ -27,6 +27,7 @@
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
+    enabled: true
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
     config:
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: 'true'
