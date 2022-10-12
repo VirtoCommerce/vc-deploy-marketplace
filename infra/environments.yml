@@ -38,6 +38,7 @@
       VirtoCommerce__SendAccountConfirmation: 'true'
 
       VirtoCommerce__Endpoint__Password: store
+      VirtoCommerce__DefaultStore: B2B-store
 
     secretConfig: {}
     themes:
