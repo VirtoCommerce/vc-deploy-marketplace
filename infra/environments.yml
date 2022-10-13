@@ -1,6 +1,6 @@
 - name: vcmp-dev
   gitops: true
-  servicePlan: S2
+  servicePlan: F2
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     config:
@@ -28,6 +28,7 @@
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
     enabled: true
+    servicePlan: F2
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
     config:
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: 'true'
@@ -36,10 +37,8 @@
       SnapshotCollectorConfiguration__IsEnabled: 'false'
       VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-store.paas.govirto.com/
       VirtoCommerce__SendAccountConfirmation: 'true'
-
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
-
     secretConfig: {}
     themes:
       B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.9.0-pr-289-ef63-ef632054.zip
@@ -47,6 +46,7 @@
   customApps:
     app1:
       enabled: true
+      servicePlan: F2
       type: standalone
       probePath: /
       name: demo-manager
@@ -60,11 +60,7 @@
       - /(Modules)(.*)
       storefrontPath: []
       servicePath: []
-    app2:
-      enabled: false
-      platformPath: []
-      storefrontPath: []
-      servicePath: []
+    app2: {}
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
