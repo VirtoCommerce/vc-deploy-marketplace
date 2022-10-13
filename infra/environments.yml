@@ -46,7 +46,7 @@
   customApps:
     app1:
       enabled: true
-      servicePlan: F2
+      servicePlan: B1
       type: standalone
       probePath: /
       name: demo-manager
