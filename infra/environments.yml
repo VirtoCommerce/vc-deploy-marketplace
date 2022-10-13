@@ -1,44 +1,46 @@
-- name: vcmp-dev
-  gitops: true
+- name: vcmp-demo
+  production: false
   servicePlan: F2
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
+    imageTag: 3.249.0-32967e7
     config:
-      ASPNETCORE_ENVIRONMENT: 'Development'
-      APPINSIGHTS_INSTRUMENTATIONKEY: 'c6aa0ecf-ab70-4c46-a1a2-426a70d62e71'
-      Marketplace__MasterCatalogId: '5aa50aaea01544529a6b6d576a668439'
-      Marketplace__StoreId: 'B2B-store'
-      Marketplace__VendorPortalUrl: https://vcmp-dev-demo-manager.paas.govirto.com/
-      Search__ElasticSearch__Server: https://elasticsearch-demo.govirto.com
-      Search__ElasticSearch__Key: Bf328fvg7vVJdef23
-      Search__OrderFullTextSearchEnabled: 'true'
-      Notifications__DefaultSender: 'azure_25da07ed75daacae20578a7a7dc58541@azure.com'
-      Notifications__Gateway: 'SendGrid'
-      Notifications__SmsDefaultSender: '+17012510519'
-      Notifications__Smtp__EnableSsl: 'False'
-      Notifications__Smtp__Host: 'smtp.sendgrid.net'
-      Notifications__Smtp__Login: 'apikey'
-      Notifications__Smtp__Port: '587'
-      Marketplace__d365__BaseUrl: 'https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com'
-      Marketplace__d365__Tenant: '16d0ce93-4497-4fa4-89dd-bc2c74bdf65e'
-      VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_1.zip
+      Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
+      VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_1.zip
+      ASPNETCORE_ENVIRONMENT: Development
+      APPINSIGHTS_INSTRUMENTATIONKEY: a86e2a6f-1195-41e9-b157-21ecd8740466
+      Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
+      Marketplace__StoreId: B2B-store
+      Marketplace__VendorPortalUrl: https://vcmp-demo-demo-manager.paas.govirto.com/
+      Search__ElasticSearch__Key: Bf328fvg7vVJdef23
+      Search__OrderFullTextSearchEnabled: true
+      Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
+      Notifications__Gateway: SendGrid
+      Notifications__SmsDefaultSender: +17012510519
+      Notifications__Smtp__EnableSsl: False
+      Notifications__Smtp__Host: smtp.sendgrid.net
+      Notifications__Smtp__Login: apikey
+      Notifications__Smtp__Port: 587
+      Marketplace__d365__BaseUrl: https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com
+      Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
     secretConfig:
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
     enabled: true
-    servicePlan: F1
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
+    imageTag: 6.2.0-alpha.895-dev-da7d847e
+    servicePlan: F1
     config:
-      ASPNETCORE_FORWARDEDHEADERS_ENABLED: 'true'
-      ASPNETCORE_ENVIRONMENT: 'Development'
-      CookieAuthenticationOptions__ExpireTimeSpan: '12:00:00'
-      SnapshotCollectorConfiguration__IsEnabled: 'false'
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-store.paas.govirto.com/
-      VirtoCommerce__SendAccountConfirmation: 'true'
-      VirtoCommerce__Endpoint__Password: Password1
+      SnapshotCollectorConfiguration__IsEnabled: false
       VirtoCommerce__DefaultStore: B2B-store
+      VirtoCommerce__Endpoint__Password: Password1
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
+      ASPNETCORE_ENVIRONMENT: Development
+      CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-demo-store.paas.govirto.com/
+      VirtoCommerce__SendAccountConfirmation: true
     secretConfig: {}
     themes:
       B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.9.0-pr-289-ef63-ef632054.zip
@@ -46,11 +48,11 @@
   customApps:
     app1:
       enabled: true
-      servicePlan: F2
+      servicePlan: F1
       type: standalone
       probePath: /
       name: demo-manager
-      imageRepository: virtopaasregistrymain.azurecr.io/vcmp/vendor-portal
+      imageRepository: ghcr.io/virtocommerce/vendor-portal
       imageTag: 1.0.32
       ingressPath: /(.*)
       platformPath:
@@ -60,7 +62,6 @@
       - /(Modules)(.*)
       storefrontPath: []
       servicePath: []
-    app2: {}
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
