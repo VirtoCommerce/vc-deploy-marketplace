@@ -28,7 +28,7 @@
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
     enabled: true
-    servicePlan: F1
+    servicePlan: F2
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
     config:
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: 'true'
