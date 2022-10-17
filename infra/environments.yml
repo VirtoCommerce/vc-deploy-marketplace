@@ -38,6 +38,7 @@
       VirtoCommerce__SendAccountConfirmation: 'true'
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
+      SYSTEM: Reload
     secretConfig: {}
     themes:
       B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.9.0-pr-289-ef63-ef632054.zip
