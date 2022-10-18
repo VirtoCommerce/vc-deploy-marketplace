@@ -10,6 +10,7 @@
       Marketplace__StoreId: 'B2B-store'
       Marketplace__VendorPortalUrl: https://vcmp-qa-demo-manager.paas.govirto.com/
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
+      Search__ElasticSearch__EnableCompatibilityMode: true
       Search__OrderFullTextSearchEnabled: 'true'
       Notifications__DefaultSender: 'azure_25da07ed75daacae20578a7a7dc58541@azure.com'
       Notifications__Gateway: 'SendGrid'
