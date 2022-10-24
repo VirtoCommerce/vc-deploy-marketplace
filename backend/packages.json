@@ -12,8 +12,12 @@
           "BlobName": "VirtoCommerce.Import_3.200.0-alpha.33.zip"
         },
         {
+          "Id": "VirtoCommerce.CustomerReviews",
+          "BlobName": "VirtoCommerce.CustomerReviews_3.206.0-pr-38-7891.zip"
+        },
+        {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.342.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.365.zip"
         }
       ],
       "Container": "packages",
@@ -62,12 +66,8 @@
           "Version": "3.213.0"
         },
         {
-          "Id": "VirtoCommerce.CustomerReviews",
-          "Version": "3.204.0"
-        },
-        {
           "Id": "VirtoCommerce.ElasticSearch",
-          "Version": "3.206.0"
+          "Version": "3.208.0"
         },
         {
           "Id": "VirtoCommerce.ExperienceApi",
