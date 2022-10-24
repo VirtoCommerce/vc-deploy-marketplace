@@ -8,7 +8,7 @@
       APPINSIGHTS_INSTRUMENTATIONKEY: '0e5beb1d-72d4-4515-ba5e-7e478d54cc03'
       Marketplace__MasterCatalogId: '5aa50aaea01544529a6b6d576a668439'
       Marketplace__StoreId: 'B2B-store'
-      Marketplace__VendorPortalUrl: https://vcmp-qa-demo-manager.paas.govirto.com/
+      Marketplace__VendorPortalUrl: https://vcmp-qa.paas.govirto.com/apps/vendor-portal/
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__OrderFullTextSearchEnabled: 'true'
@@ -35,7 +35,7 @@
       ASPNETCORE_ENVIRONMENT: 'Development'
       CookieAuthenticationOptions__ExpireTimeSpan: '12:00:00'
       SnapshotCollectorConfiguration__IsEnabled: 'false'
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-store.paas.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.paas.govirto.com/
       VirtoCommerce__SendAccountConfirmation: 'true'
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -44,24 +44,6 @@
     themes:
       B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.9.0-pr-289-ef63-ef632054.zip
   ingress: {}
-  customApps:
-    app1:
-      enabled: true
-      servicePlan: F1
-      type: standalone
-      probePath: /
-      name: demo-manager
-      imageRepository: virtopaasregistrymain.azurecr.io/vcmp/vendor-portal
-      imageTag: 1.0.32
-      ingressPath: /(.*)
-      platformPath:
-      - /(api)(.*)
-      - /(connect\/token)(.*)
-      - /(pushNotificationHub)(.*)
-      - /(Modules)(.*)
-      storefrontPath: []
-      servicePath: []
-    app2: {}
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
