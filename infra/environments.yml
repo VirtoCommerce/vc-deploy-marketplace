@@ -1,6 +1,6 @@
 - name: vcmp-dev
   gitops: true
-  servicePlan: B2
+  servicePlan: F2
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     config:
