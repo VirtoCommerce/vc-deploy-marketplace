@@ -8,7 +8,7 @@
       APPINSIGHTS_INSTRUMENTATIONKEY: '0e5beb1d-72d4-4515-ba5e-7e478d54cc03'
       Marketplace__MasterCatalogId: '5aa50aaea01544529a6b6d576a668439'
       Marketplace__StoreId: 'B2B-store'
-      Marketplace__VendorPortalUrl: https://vcmp-qa.paas.govirto.com/apps/vendor-portal/
+      Marketplace__VendorPortalUrl: https://vcmp-qa.paas.govirto.com/apps/vendor-portal/#/
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__OrderFullTextSearchEnabled: 'true'
