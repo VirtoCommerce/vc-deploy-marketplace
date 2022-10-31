@@ -17,7 +17,7 @@
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.366.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.370.zip"
         }
       ],
       "Container": "packages",
@@ -87,7 +87,7 @@
         },
         {
           "Id": "VirtoCommerce.Inventory",
-          "Version": "3.207.0"
+          "Version": "3.209.0"
         },
         {
           "Id": "VirtoCommerce.Marketing",
