@@ -8,12 +8,16 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.200.0-alpha.33.zip"
+          "Id": "VirtoCommerce.CustomerReviews",
+          "BlobName": "VirtoCommerce.CustomerReviews_3.208.0-alpha.160-vm-1077.zip"
         },
         {
-          "Id": "VirtoCommerce.CustomerReviews",
-          "BlobName": "VirtoCommerce.CustomerReviews_3.206.0-pr-38-7891.zip"
+          "Id": "VirtoCommerce.ExperienceApi",
+          "BlobName": "VirtoCommerce.ExperienceApi_3.241.4-alpha.1059-vm-1077.zip"
+        },
+        {
+          "Id": "VirtoCommerce.Import",
+          "BlobName": "VirtoCommerce.Import_3.200.0-alpha.33.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
@@ -35,31 +39,31 @@
         },
         {
           "Id": "VirtoCommerce.AzureBlobAssets",
-          "Version": "3.200.0"
+          "Version": "3.205.0"
         },
         {
           "Id": "VirtoCommerce.BulkActionsModule",
           "Version": "3.200.0"
         },
         {
-          "Id": "VirtoCommerce.Core",
-          "Version": "3.204.0"
-        },
-        {
           "Id": "VirtoCommerce.Cart",
-          "Version": "3.201.0"
+          "Version": "3.204.0"
         },
         {
           "Id": "VirtoCommerce.Catalog",
-          "Version": "3.240.0"
+          "Version": "3.241.0"
         },
         {
           "Id": "VirtoCommerce.CatalogCsvImportModule",
-          "Version": "3.202.0"
+          "Version": "3.204.0"
         },
         {
           "Id": "VirtoCommerce.Content",
-          "Version": "3.204.0"
+          "Version": "3.206.0"
+        },
+        {
+          "Id": "VirtoCommerce.Core",
+          "Version": "3.205.0"
         },
         {
           "Id": "VirtoCommerce.Customer",
@@ -67,11 +71,7 @@
         },
         {
           "Id": "VirtoCommerce.ElasticSearch",
-          "Version": "3.208.0"
-        },
-        {
-          "Id": "VirtoCommerce.ExperienceApi",
-          "Version": "3.231.0"
+          "Version": "3.209.0"
         },
         {
           "Id": "VirtoCommerce.Export",
@@ -79,7 +79,7 @@
         },
         {
           "Id": "VirtoCommerce.FileSystemAssets",
-          "Version": "3.200.0"
+          "Version": "3.203.0"
         },
         {
           "Id": "VirtoCommerce.ImageTools",
@@ -91,15 +91,15 @@
         },
         {
           "Id": "VirtoCommerce.Marketing",
-          "Version": "3.200.0"
+          "Version": "3.201.0"
         },
         {
           "Id": "VirtoCommerce.Notifications",
-          "Version": "3.209.0"
+          "Version": "3.210.0"
         },
         {
           "Id": "VirtoCommerce.Orders",
-          "Version": "3.214.0"
+          "Version": "3.216.0"
         },
         {
           "Id": "VirtoCommerce.Payment",
@@ -107,15 +107,15 @@
         },
         {
           "Id": "VirtoCommerce.Pricing",
-          "Version": "3.211.0"
+          "Version": "3.214.0"
         },
         {
           "Id": "VirtoCommerce.ProfileExperienceApiModule",
-          "Version": "3.219.0"
+          "Version": "3.230.0"
         },
         {
           "Id": "VirtoCommerce.Search",
-          "Version": "3.211.0"
+          "Version": "3.212.0"
         },
         {
           "Id": "VirtoCommerce.Shipping",
@@ -131,11 +131,11 @@
         },
         {
           "Id": "VirtoCommerce.Tax",
-          "Version": "3.200.0"
+          "Version": "3.201.0"
         },
         {
           "Id": "VirtoCommerce.WebHooks",
-          "Version": "3.201.0"
+          "Version": "3.205.0"
         }
       ]
     }
