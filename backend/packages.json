@@ -9,11 +9,11 @@
       "Modules": [
         {
           "Id": "VirtoCommerce.CustomerReviews",
-          "BlobName": "VirtoCommerce.CustomerReviews_3.208.0-alpha.157-vm-1077.zip"
+          "BlobName": "VirtoCommerce.CustomerReviews_3.208.0-alpha.160-vm-1077.zip"
         },
         {
           "Id": "VirtoCommerce.ExperienceApi",
-          "BlobName": "VirtoCommerce.ExperienceApi_3.241.3-alpha.1056-vm-1077.zip"
+          "BlobName": "VirtoCommerce.ExperienceApi_3.241.4-alpha.1059-vm-1077.zip"
         },
         {
           "Id": "VirtoCommerce.Import",
@@ -21,7 +21,7 @@
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.382.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.383.zip"
         }
       ],
       "Container": "packages",
