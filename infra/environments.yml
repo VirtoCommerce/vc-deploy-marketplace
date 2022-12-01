@@ -42,7 +42,7 @@
       SYSTEM: Reload
     secretConfig: {}
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.15.0-alpha.514-vm-1077.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.15.0-alpha.515-vm-1077.zip
   ingress: {}
   protectedParameters:
     - platform.image.tag
