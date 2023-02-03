@@ -42,8 +42,9 @@
       SYSTEM: Reload
     secretConfig: {}
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.16.0-alpha.517.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.19.0-alpha.573.zip
   ingress: {}
   protectedParameters:
+    - themes.B2B-store
     - platform.image.tag
     - storefront.image.tag
