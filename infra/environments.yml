@@ -1,4 +1,5 @@
 - name: vcmp-demo
+  gitops: true
   production: false
   servicePlan: F2
   platform:
@@ -42,9 +43,8 @@
       SYSTEM: Reload
     secretConfig: {}
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.9.0-pr-289-ef63-ef632054.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.16.0-alpha.517.zip
   ingress: {}
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
-    - custom.app1.image.tag
