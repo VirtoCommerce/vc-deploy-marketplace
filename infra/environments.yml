@@ -1,26 +1,28 @@
 - name: vcmp-qa
   gitops: true
-  servicePlan: F2
+  production: false
+  servicePlan: F1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
+    sqlReplica: false
     config:
-      ASPNETCORE_ENVIRONMENT: 'Development'
-      APPINSIGHTS_INSTRUMENTATIONKEY: '0e5beb1d-72d4-4515-ba5e-7e478d54cc03'
-      Marketplace__MasterCatalogId: '5aa50aaea01544529a6b6d576a668439'
-      Marketplace__StoreId: 'B2B-store'
+      ASPNETCORE_ENVIRONMENT: Development
+      APPINSIGHTS_INSTRUMENTATIONKEY: 0e5beb1d-72d4-4515-ba5e-7e478d54cc03
+      Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
+      Marketplace__StoreId: B2B-store
       Marketplace__VendorPortalUrl: https://vcmp-qa.paas.govirto.com/apps/vendor-portal/#/
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
-      Search__ElasticSearch__EnableCompatibilityMode: 'true'
-      Search__OrderFullTextSearchEnabled: 'true'
-      Notifications__DefaultSender: 'azure_25da07ed75daacae20578a7a7dc58541@azure.com'
-      Notifications__Gateway: 'SendGrid'
-      Notifications__SmsDefaultSender: '+17012510519'
-      Notifications__Smtp__EnableSsl: 'False'
-      Notifications__Smtp__Host: 'smtp.sendgrid.net'
-      Notifications__Smtp__Login: 'apikey'
-      Notifications__Smtp__Port: '587'
-      Marketplace__d365__BaseUrl: 'https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com'
-      Marketplace__d365__Tenant: '16d0ce93-4497-4fa4-89dd-bc2c74bdf65e'
+      Search__ElasticSearch__EnableCompatibilityMode: true
+      Search__OrderFullTextSearchEnabled: true
+      Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
+      Notifications__Gateway: SendGrid
+      Notifications__SmsDefaultSender: +17012510519
+      Notifications__Smtp__EnableSsl: False
+      Notifications__Smtp__Host: smtp.sendgrid.net
+      Notifications__Smtp__Login: apikey
+      Notifications__Smtp__Port: 587
+      Marketplace__d365__BaseUrl: https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com
+      Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
     secretConfig:
@@ -28,23 +30,27 @@
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
     enabled: true
-    servicePlan: F1
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
+    servicePlan: F1
     config:
-      ASPNETCORE_FORWARDEDHEADERS_ENABLED: 'true'
-      ASPNETCORE_ENVIRONMENT: 'Development'
-      CookieAuthenticationOptions__ExpireTimeSpan: '12:00:00'
-      SnapshotCollectorConfiguration__IsEnabled: 'false'
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
+      ASPNETCORE_ENVIRONMENT: Development
+      CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
+      SnapshotCollectorConfiguration__IsEnabled: false
       VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.paas.govirto.com/
-      VirtoCommerce__SendAccountConfirmation: 'true'
+      VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
-    secretConfig: {}
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.9.0-pr-289-ef63-ef632054.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-theme-b2b-vue/releases/download/1.21.0/vc-theme-b2b-vue-1.21.0.zip
   ingress: {}
+  customApps:
+    app1:
+      enabled: false
+    app2:
+      enabled: false
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
-    - custom.app1.image.tag
+  version: 2.206
