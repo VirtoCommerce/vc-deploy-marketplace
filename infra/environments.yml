@@ -4,7 +4,6 @@
   servicePlan: F1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
-    imageTag: 3.278.0-d525d43
     sqlReplica: false
     config:
       ASPNETCORE_ENVIRONMENT: Development
@@ -32,7 +31,6 @@
   storefront:
     enabled: true
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
-    imageTag: 6.11.0-master-f53326ae
     servicePlan: F1
     config:
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
@@ -52,4 +50,8 @@
       enabled: false
     app2:
       enabled: false
+  protectedParameters:
+    - themes.B2B-store
+    - platform.image.tag
+    - storefront.image.tag
   version: 2.206
