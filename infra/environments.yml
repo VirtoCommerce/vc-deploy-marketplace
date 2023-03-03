@@ -8,6 +8,7 @@
     config:
       ASPNETCORE_ENVIRONMENT: Development
       APPINSIGHTS_INSTRUMENTATIONKEY: c6aa0ecf-ab70-4c46-a1a2-426a70d62e71
+      FrontendSecurity_OrganizationMaintainerRole: org-maintainer
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
       Marketplace__VendorPortalUrl: https://vcmp-dev.paas.govirto.com/apps/vendor-portal/#/
