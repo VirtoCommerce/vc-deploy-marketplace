@@ -8,8 +8,12 @@
       "Name": "AzureBlob",
       "Modules": [
         {
+          "Id": "VirtoCommerce.Notifications",
+          "BlobName": "VirtoCommerce.Notifications_3.214.0-pr-125-f0a7.zip"
+        },
+        {
           "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.200.0-alpha.53.zip"
+          "BlobName": "VirtoCommerce.Import_3.200.0-alpha.54.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
@@ -92,10 +96,6 @@
         {
           "Id": "VirtoCommerce.Marketing",
           "Version": "3.207.0"
-        },
-        {
-          "Id": "VirtoCommerce.Notifications",
-          "Version": "3.213.0"
         },
         {
           "Id": "VirtoCommerce.Orders",
