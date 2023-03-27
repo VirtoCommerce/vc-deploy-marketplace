@@ -1,8 +1,8 @@
 {
   "ManifestVersion": "2.0",
-  "PlatformVersion": "3.291.0",
+  "PlatformVersion": "3.293.0",
   "PlatformImage": "ghcr.io/virtocommerce/platform",
-  "PlatformImageTag": "3.291.0",
+  "PlatformImageTag": "3.293.0",
   "Sources": [
     {
       "Name": "AzureBlob",
@@ -43,7 +43,7 @@
         },
         {
           "Id": "VirtoCommerce.Catalog",
-          "Version": "3.260.0"
+          "Version": "3.261.0"
         },
         {
           "Id": "VirtoCommerce.CatalogCsvImportModule",
@@ -63,7 +63,7 @@
         },
         {
           "Id": "VirtoCommerce.CustomerReviews",
-          "Version": "3.213.0"
+          "Version": "3.214.0"
         },
         {
           "Id": "VirtoCommerce.ElasticSearch",
@@ -71,7 +71,7 @@
         },
         {
           "Id": "VirtoCommerce.ExperienceApi",
-          "Version": "3.262.0"
+          "Version": "3.300.0"
         },
         {
           "Id": "VirtoCommerce.Export",
@@ -111,7 +111,7 @@
         },
         {
           "Id": "VirtoCommerce.ProfileExperienceApiModule",
-          "Version": "3.236.0"
+          "Version": "3.300.0"
         },
         {
           "Id": "VirtoCommerce.Search",
