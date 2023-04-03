@@ -1,8 +1,8 @@
 {
   "ManifestVersion": "2.0",
-  "PlatformVersion": "3.293.0",
+  "PlatformVersion": "3.294.0",
   "PlatformImage": "ghcr.io/virtocommerce/platform",
-  "PlatformImageTag": "3.293.0",
+  "PlatformImageTag": "3.294.0",
   "Sources": [
     {
       "Name": "AzureBlob",
@@ -39,11 +39,11 @@
         },
         {
           "Id": "VirtoCommerce.Cart",
-          "Version": "3.215.0"
+          "Version": "3.216.0"
         },
         {
           "Id": "VirtoCommerce.Catalog",
-          "Version": "3.261.0"
+          "Version": "3.264.0"
         },
         {
           "Id": "VirtoCommerce.CatalogCsvImportModule",
@@ -51,7 +51,7 @@
         },
         {
           "Id": "VirtoCommerce.Content",
-          "Version": "3.216.0"
+          "Version": "3.217.0"
         },
         {
           "Id": "VirtoCommerce.Core",
@@ -99,7 +99,7 @@
         },
         {
           "Id": "VirtoCommerce.Orders",
-          "Version": "3.225.0"
+          "Version": "3.226.0"
         },
         {
           "Id": "VirtoCommerce.Payment",
@@ -135,7 +135,7 @@
         },
         {
           "Id": "VirtoCommerce.WebHooks",
-          "Version": "3.208.0"
+          "Version": "3.209.0"
         }
       ]
     }
