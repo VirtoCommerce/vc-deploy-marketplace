@@ -44,7 +44,7 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.22.0-alpha.603.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.25.0-alpha.693-leave-feedback.zip
   ingress: {}
   customApps:
     app1:
