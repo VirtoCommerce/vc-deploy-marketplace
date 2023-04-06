@@ -8,10 +8,6 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.Orders",
-          "BlobName": "VirtoCommerce.Orders_3.227.0-pr-335-4754.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.200.0-alpha.55.zip"
         },
@@ -100,6 +96,10 @@
         {
           "Id": "VirtoCommerce.Notifications",
           "Version": "3.215.0"
+        },
+        {
+          "Id": "VirtoCommerce.Orders",
+          "Version": "3.226.0"
         },
         {
           "Id": "VirtoCommerce.Payment",
