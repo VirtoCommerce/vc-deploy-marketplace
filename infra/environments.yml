@@ -8,11 +8,11 @@
     config:
       ASPNETCORE_ENVIRONMENT: Development
       APPINSIGHTS_INSTRUMENTATIONKEY: c6aa0ecf-ab70-4c46-a1a2-426a70d62e71
-      AzureAd__ApplicationId: "86d04c35-143d-4d3c-aea2-8608e2186282"
-      AzureAd__Enabled: "true"
+      AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
+      AzureAd__Enabled: true
       AzureAd__Priority: 1
-      AzureAd__TenantId: "common"
-      AzureAd__ValidateIssuer: "MultitenantAzureAD"
+      AzureAd__TenantId: common
+      AzureAd__ValidateIssuer: MultitenantAzureAD
       FrontendSecurity__OrganizationMaintainerRole: org-maintainer
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
