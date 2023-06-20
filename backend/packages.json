@@ -8,16 +8,12 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.Orders",
-          "BlobName": "VirtoCommerce.Orders_3.227.0-pr-335-4754.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.200.0-alpha.55.zip"
+          "BlobName": "VirtoCommerce.Import_3.200.0-alpha.64.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.463.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.200.0-alpha.488-dev.zip"
         }
       ],
       "Container": "packages",
@@ -32,6 +28,10 @@
         {
           "Id": "VirtoCommerce.Assets",
           "Version": "3.204.0"
+        },
+        {
+          "Id": "VirtoCommerce.AzureAD",
+          "Version": "3.201.0"
         },
         {
           "Id": "VirtoCommerce.AzureBlobAssets",
@@ -100,6 +100,10 @@
         {
           "Id": "VirtoCommerce.Notifications",
           "Version": "3.215.0"
+        },
+        {
+          "Id": "VirtoCommerce.Orders",
+          "Version": "3.226.0"
         },
         {
           "Id": "VirtoCommerce.Payment",
