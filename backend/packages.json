@@ -27,7 +27,7 @@
       "Modules": [
         {
           "Id": "VirtoCommerce.ApplicationInsights",
-          "Version": "3.203.0"
+          "Version": "3.202.0"
         },
         {
           "Id": "VirtoCommerce.Assets",
