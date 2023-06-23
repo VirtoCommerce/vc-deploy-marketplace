@@ -7,6 +7,7 @@
     sqlReplica: false
     config:
       ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
       APPINSIGHTS_INSTRUMENTATIONKEY: 8c4a3d98-a113-4779-9cf7-33a0412a9102
       AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
       AzureAd__Enabled: true
