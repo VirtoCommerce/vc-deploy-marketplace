@@ -30,6 +30,7 @@
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__OrderFullTextSearchEnabled: true
+      Search__ContentFullTextSearchEnabled: true
       Serilog__Using: Serilog.Sinks.ApplicationInsights
       Serilog__WriteTo__Name: ApplicationInsights
       Serilog__WriteTo__Args__connectionString: InstrumentationKey=8c4a3d98-a113-4779-9cf7-33a0412a9102;IngestionEndpoint=https://eastus-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/
