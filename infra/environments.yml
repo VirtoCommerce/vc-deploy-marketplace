@@ -45,7 +45,7 @@
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
       ASPNETCORE_ENVIRONMENT: Development
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
-      Reload: 2
+      Reload: 3
       SnapshotCollectorConfiguration__IsEnabled: false
       VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.paas.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
