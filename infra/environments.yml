@@ -27,7 +27,6 @@
       Notifications__Smtp__Login: apikey
       Notifications__Smtp__Port: 587
       PasswordLogin__Priority: 0
-      Search__ContentFullTextSearchEnabled: true
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__OrderFullTextSearchEnabled: true
@@ -52,7 +51,7 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.32.0-alpha.737.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.33.0-alpha.744.zip
   ingress: {}
   customApps:
     app1:
