@@ -14,6 +14,7 @@
       AzureAd__Priority: 1
       AzureAd__TenantId: common
       AzureAd__ValidateIssuer: MultitenantAzureAD
+      DOTNET_USE_POLLING_FILE_WATCHER: true
       FrontendSecurity__OrganizationMaintainerRole: org-maintainer
       Marketplace__d365__BaseUrl: https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
