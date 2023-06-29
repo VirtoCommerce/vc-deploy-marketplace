@@ -33,7 +33,7 @@
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__OrderFullTextSearchEnabled: true
       VirtoCommerce__ApplicationInsights__SamplingOptions__Processor: Fixed
-      VirtoCommerce__ApplicationInsights__IgnoreSqlTelemetryOptions__QueryIgnoreSubstrings: []
+      VirtoCommerce__ApplicationInsights__IgnoreSqlTelemetryOptions__QueryIgnoreSubstrings: null
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
       VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
     secretConfig:
