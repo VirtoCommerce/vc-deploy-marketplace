@@ -34,6 +34,10 @@
           "Version": "3.204.0"
         },
         {
+          "Id": "VirtoCommerce.AuthorizeNetPayment",
+          "Version": "3.206.0"
+        },
+        {
           "Id": "VirtoCommerce.AzureAD",
           "Version": "3.201.0"
         },
@@ -96,6 +100,10 @@
         {
           "Id": "VirtoCommerce.Inventory",
           "Version": "3.216.0"
+        },
+        {
+          "Id": "VirtoCommerce.LuceneSearch",
+          "Version": "3.204.0"
         },
         {
           "Id": "VirtoCommerce.Marketing",
