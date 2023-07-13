@@ -13,7 +13,7 @@
         },
         {
           "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.201.0-alpha.80.zip"
+          "BlobName": "VirtoCommerce.Import_3.201.0-alpha.80-dev-a3df31e7.zip"
         }
       ],
       "Container": "packages",
