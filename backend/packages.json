@@ -1,6 +1,7 @@
 {
   "ManifestVersion": "2.0",
-  "PlatformVersion": "3.312.0-alpha.12680-vm-1179",
+  "PlatformVersion": "3.312.0",
+  "PlatformAssetUrl": "https://vc3prerelease.blob.core.windows.net/packages/VirtoCommerce.Platform.3.312.0-alpha.12680-vm-1179.zip",
   "PlatformImage": "ghcr.io/virtocommerce/platform",
   "PlatformImageTag": "3.312.0-alpha.12680-vm-1179-4d67a650",
   "Sources": [
