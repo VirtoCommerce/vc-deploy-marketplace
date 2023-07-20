@@ -10,7 +10,7 @@
       "Modules": [
         {
           "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.201.0.zip"
+          "BlobName": "VirtoCommerce.Import_3.202.0-alpha.85-vm-1178-errors-serialization-9ff9a8f7.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
