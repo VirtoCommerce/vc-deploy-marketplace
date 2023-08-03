@@ -66,4 +66,4 @@
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
-  version: 3.209
+  version: 3.208
