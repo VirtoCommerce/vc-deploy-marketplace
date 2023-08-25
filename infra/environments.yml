@@ -1,14 +1,14 @@
-- name: vcmp-qa
+- name: vcmp-demo
   gitops: true
   production: false
-  servicePlan: F1
+  servicePlan: F2
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
     config:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
-      APPINSIGHTS_INSTRUMENTATIONKEY: 0e5beb1d-72d4-4515-ba5e-7e478d54cc03
+      APPINSIGHTS_INSTRUMENTATIONKEY: a86e2a6f-1195-41e9-b157-21ecd8740466
       AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
       AzureAd__Enabled: true
       AzureAd__Priority: 1
@@ -20,7 +20,7 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-qa.paas.govirto.com/apps/vendor-portal/#/
+      Marketplace__VendorPortalUrl: https://vcmp-demo.paas.govirto.com/apps/vendor-portal/#/
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -50,7 +50,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.paas.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-demo-storefront.paas.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
