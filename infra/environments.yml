@@ -7,19 +7,20 @@
     sqlReplica: false
     config:
       ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
       APPINSIGHTS_INSTRUMENTATIONKEY: 0e5beb1d-72d4-4515-ba5e-7e478d54cc03
       AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
       AzureAd__Enabled: true
       AzureAd__Priority: 1
       AzureAd__TenantId: common
       AzureAd__ValidateIssuer: MultitenantAzureAD
+      DOTNET_USE_POLLING_FILE_WATCHER: true
       FrontendSecurity__OrganizationMaintainerRole: org-maintainer
+      Marketplace__d365__BaseUrl: https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com
+      Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
       Marketplace__VendorPortalUrl: https://vcmp-qa.paas.govirto.com/apps/vendor-portal/#/
-      Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
-      Search__ElasticSearch__EnableCompatibilityMode: true
-      Search__OrderFullTextSearchEnabled: true
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -27,11 +28,14 @@
       Notifications__Smtp__Host: smtp.sendgrid.net
       Notifications__Smtp__Login: apikey
       Notifications__Smtp__Port: 587
-      Marketplace__d365__BaseUrl: https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com
-      Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       PasswordLogin__Priority: 0
-      VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
+      Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
+      Search__ElasticSearch__EnableCompatibilityMode: true
+      Search__OrderFullTextSearchEnabled: true
+      VirtoCommerce__ApplicationInsights__SamplingOptions__Processor: Fixed
+      VirtoCommerce__ApplicationInsights__IgnoreSqlTelemetryOptions: null
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
+      VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
     secretConfig:
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
@@ -40,9 +44,11 @@
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
     servicePlan: F1
     config:
+      APPINSIGHTS_INSTRUMENTATIONKEY: 1d9f37fe-9616-428a-856c-12ed99a79166
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
       ASPNETCORE_ENVIRONMENT: Development
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
+      Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
       VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.paas.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
@@ -50,7 +56,7 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-1.25.0-alpha.693-leave-feedback.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-theme-b2b-vue/releases/download/1.34.0/vc-theme-b2b-vue-1.34.0.zip
   ingress: {}
   customApps:
     app1:
