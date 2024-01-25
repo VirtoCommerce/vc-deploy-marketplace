@@ -21,7 +21,7 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-dev.paas.govirto.com/apps/vendor-portal/#/
+      Marketplace__VendorPortalUrl: https://vcmp-dev.govirto.com/apps/vendor-portal/#/
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -51,7 +51,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.paas.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
