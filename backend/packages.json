@@ -8,12 +8,12 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.804.0-alpha.641-dev-8067442663-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.801.0-alpha.186-dev-230ecf24.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.804.0-alpha.642.zip"
         }
       ],
       "Container": "packages",
