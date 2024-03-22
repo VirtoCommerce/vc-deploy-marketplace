@@ -7,6 +7,7 @@ on:
       - 'storybook/**'
     branches: 
       - 'vcmp-*'
+      - 'VCI-847'
 
 jobs:
   gitops:
