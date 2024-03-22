@@ -14,6 +14,7 @@ jobs:
     env:
       ARGO_APP_NAME: ${{ github.ref_name }}
       STORYBOOK_TAG: ''
+      CLOUD_URL: https://portal.virtocommerce.cloud
 
     steps:
       - uses: actions/checkout@v4
@@ -29,6 +30,19 @@ jobs:
 
       - name: Update environment
         run: |
-            export PARAMETER_NAME=$(echo "custom.app1.image.tag" | xargs)
-            export PARAMETER_VALUE=$(echo "${{ env.STORYBOOK_TAG }}" | xargs)
-            vc-build CloudEnvSetParameter -EnvironmentName ${{ env.ARGO_APP_NAME }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -HelmParameters $PARAMETER_NAME=$PARAMETER_VALUE
+          dotnet tool install --global VirtoCommerce.GlobalTool
+          vc-build CloudEnvSetParameter -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HelmParameters custom.app1.image.tag=${{ env.STORYBOOK_TAG }}
+
+      - name: Check deployment start
+        run: |
+          vc-build CloudEnvStatus -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HealthStatus Progressing
+
+      - name: Check deployment status
+        run: |
+          vc-build CloudEnvStatus -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HealthStatus Healthy -SyncStatus Synced
+
+      # - name: Update environment
+      #   run: |
+      #       export PARAMETER_NAME=$(echo "custom.app1.image.tag" | xargs)
+      #       export PARAMETER_VALUE=$(echo "${{ env.STORYBOOK_TAG }}" | xargs)
+      #       vc-build CloudEnvSetParameter -EnvironmentName ${{ env.ARGO_APP_NAME }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -HelmParameters $PARAMETER_NAME=$PARAMETER_VALUE
