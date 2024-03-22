@@ -63,7 +63,7 @@
     app1:
       name: storybook
       enabled: true
-      imageRepository: ghcr.io/virtocommerce/vc-theme-b2b-vue-storybook
+      imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
       servicePlan: F1
       type: standalone
       hostname: vcmp-dev-storybook.govirto.com
