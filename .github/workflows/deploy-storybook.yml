@@ -6,14 +6,13 @@ on:
     paths:
       - 'storybook/**'
     branches: 
-      - 'vcmp-*'
-      - 'VCI-847'
+      - 'vcmp-dev'
 
 jobs:
   gitops:
     runs-on: ubuntu-latest
     env:
-      ARGO_APP_NAME: vcmp-dev #${{ github.ref_name }}
+      ARGO_APP_NAME: vcmp-dev
       STORYBOOK_TAG: ''
       CLOUD_URL: https://portal.virtocommerce.cloud
 
@@ -41,9 +40,3 @@ jobs:
       - name: Check deployment status
         run: |
           vc-build CloudEnvStatus -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HealthStatus Healthy -SyncStatus Synced
-
-      # - name: Update environment
-      #   run: |
-      #       export PARAMETER_NAME=$(echo "custom.app1.image.tag" | xargs)
-      #       export PARAMETER_VALUE=$(echo "${{ env.STORYBOOK_TAG }}" | xargs)
-      #       vc-build CloudEnvSetParameter -EnvironmentName ${{ env.ARGO_APP_NAME }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -HelmParameters $PARAMETER_NAME=$PARAMETER_VALUE
