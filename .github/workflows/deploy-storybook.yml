@@ -1,0 +1,42 @@
+name: Cloud storybook deployment
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'storybook/**'
+    branches: 
+      - 'vcmp-dev'
+
+jobs:
+  gitops:
+    runs-on: ubuntu-latest
+    env:
+      ARGO_APP_NAME: vcmp-dev
+      STORYBOOK_TAG: ''
+      CLOUD_URL: https://portal.virtocommerce.cloud
+
+    steps:
+      - uses: actions/checkout@v4
+   
+      - name: Install vc-build
+        run: |
+          dotnet tool install --global VirtoCommerce.GlobalTool
+    
+      - name: Get theme version
+        id: storybook-version
+        run: |
+            echo "STORYBOOK_TAG=$(cat ./storybook/image.json | jq -r '.Tag')" >> $GITHUB_ENV
+
+      - name: Update environment
+        run: |
+          dotnet tool install --global VirtoCommerce.GlobalTool
+          vc-build CloudEnvSetParameter -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HelmParameters custom.app1.image.tag=${{ env.STORYBOOK_TAG }}
+
+      - name: Check deployment start
+        run: |
+          vc-build CloudEnvStatus -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HealthStatus Progressing
+
+      - name: Check deployment status
+        run: |
+          vc-build CloudEnvStatus -CloudUrl ${{ env.CLOUD_URL }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN  }} -EnvironmentName ${{ env.ARGO_APP_NAME }} -HealthStatus Healthy -SyncStatus Synced
