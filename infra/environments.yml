@@ -66,7 +66,7 @@
       imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
       servicePlan: F1
       type: standalone
-      hostname: vcmp-dev-storybook.govirto.com
+      hostname: vc-shell-storybook.govirto.com
       probePath: /
       ingressPath: /
     app2:
