@@ -61,14 +61,7 @@
   ingress: {}
   customApps:
     app1:
-      name: storybook
-      enabled: true
-      imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
-      servicePlan: B1
-      type: standalone
-      hostname: vc-shell-storybook.govirto.com
-      probePath: /
-      ingressPath: /
+      enabled: false
     app2:
       enabled: false
   protectedParameters:
