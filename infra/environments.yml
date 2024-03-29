@@ -64,7 +64,7 @@
       name: storybook
       enabled: true
       imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
-      servicePlan: F1
+      servicePlan: B1
       type: standalone
       hostname: vc-shell-storybook.govirto.com
       probePath: /
