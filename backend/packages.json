@@ -14,6 +14,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.805.0.zip"
+        },
+        {
+          "Id": "VirtoCommerce.CustomerReviews",
+          "BlobName": "VirtoCommerce.CustomerReviews_3.801.0-pr-58-b55b.zip"
         }
       ],
       "Container": "packages",
@@ -72,10 +76,6 @@
         {
           "Id": "VirtoCommerce.Customer",
           "Version": "3.803.0"
-        },
-        {
-          "Id": "VirtoCommerce.CustomerReviews",
-          "Version": "3.800.0"
         },
         {
           "Id": "VirtoCommerce.ElasticSearch",
