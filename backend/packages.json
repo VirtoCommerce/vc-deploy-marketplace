@@ -9,11 +9,11 @@
       "Modules": [
         {
           "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.802.0-alpha.214.zip"
+          "BlobName": "VirtoCommerce.Import_3.805.0.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.809.0-alpha.722-dev-9484845740-1.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.814.0-alpha.733.zip"
         }
       ],
       "Container": "packages",
