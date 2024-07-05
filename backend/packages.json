@@ -14,6 +14,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.815.0-alpha.741.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceReviews",
+          "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0-alpha.2.zip"
         }
       ],
       "Container": "packages",
