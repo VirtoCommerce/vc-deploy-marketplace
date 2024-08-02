@@ -61,7 +61,7 @@
   ingress: {}
   customApps:
     app1:
-      enabled: false
+      enabled: false  
     app2:
       enabled: false
   protectedParameters:
