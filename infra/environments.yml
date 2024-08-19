@@ -1,7 +1,7 @@
 - name: vcmp-dev
   gitops: true
   production: false
-  servicePlan: F1
+  servicePlan: F2
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
@@ -41,7 +41,7 @@
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
   storefront:
-    enabled: true
+    enabled: false
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
     servicePlan: F1
     config:
@@ -57,7 +57,7 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-theme-b2b-vue/releases/download/1.62.0/vc-theme-b2b-vue-1.62.0.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-theme-b2b-vue/releases/download/2.3.0/vc-theme-b2b-vue-2.3.0.zip
   ingress: {}
   customApps:
     app1:
@@ -71,6 +71,26 @@
       ingressPath: /
     app2:
       enabled: false
+  routes:
+  - host: vcmp-dev-storefront.govirto.com
+    root: B2B-store
+    paths:
+    - path: /xapi
+      route: platform
+    - path: /files
+      route: platform
+    - path: /connect/token
+      route: platform
+    - path: /graphql
+      route: platform
+    - path: /revoke/token
+      route: platform
+    - path: /api/files
+      route: platform
+    - path: /externalsignin
+      route: platform
+    - path: /signin-oidc
+      route: platform
   protectedParameters:
     - platform.image.tag
     - storefront.image.tag
