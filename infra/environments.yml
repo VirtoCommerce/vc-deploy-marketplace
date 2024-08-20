@@ -1,7 +1,7 @@
 - name: vcmp-qa
   gitops: true
   production: false
-  servicePlan: F2
+  servicePlan: F1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
@@ -65,7 +65,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-dev-storefront.govirto.com
+  - host: vcmp-qa-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
