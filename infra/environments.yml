@@ -65,7 +65,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-qa-storefront.govirto.com
+  - host: vcmp-demo-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
