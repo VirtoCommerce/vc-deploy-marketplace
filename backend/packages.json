@@ -12,12 +12,12 @@
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0-alpha.13.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.816.0-alpha.775.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.806.0-alpha.247.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.816.0-alpha.775-dev-10630597200-1.zip"
         }
       ],
       "Container": "packages",
