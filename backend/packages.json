@@ -8,16 +8,16 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.MarketplaceReviews",
-          "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0-alpha.13.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.806.0-alpha.247.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.818.0.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceReviews",
+          "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0-alpha.14.zip"
         }
       ],
       "Container": "packages",
