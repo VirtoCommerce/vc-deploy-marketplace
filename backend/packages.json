@@ -22,6 +22,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.825.0-alpha.819.zip"
+        },
+        {
+          "Id": "VirtoCommerce.CommunicationModule",
+          "BlobName": "VirtoCommerce.CommunicationModule_3.800.0-alpha.2-dev-11477426072-1.zip"
         }
       ],
       "Container": "packages",
