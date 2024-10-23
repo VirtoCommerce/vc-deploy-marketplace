@@ -20,16 +20,8 @@
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0.zip"
         },
         {
-          "Id": "VirtoCommerce.CommunicationModule",
-          "BlobName": "VirtoCommerce.CommunicationModule_3.800.0-alpha.3.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.825.0-alpha.819-dev-11478028011-1.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceCommunicationModule",
-          "BlobName": "VirtoCommerce.MarketplaceCommunicationModule_3.800.0-alpha.3-dev-11478722970-1.zip"
         },
         {
           "Id": "VirtoCommerce.Communication",
