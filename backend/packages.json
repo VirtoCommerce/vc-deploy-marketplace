@@ -30,6 +30,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceCommunicationModule",
           "BlobName": "VirtoCommerce.MarketplaceCommunicationModule_3.800.0-alpha.3-dev-11478722970-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.Communication",
+          "BlobName": "VirtoCommerce.Communication_3.800.0-alpha.4.zip"
         }
       ],
       "Container": "packages",
