@@ -20,16 +20,16 @@
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.825.0-alpha.819-dev-11478028011-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceCommunication",
           "BlobName": "VirtoCommerce.MarketplaceCommunication_3.800.0-alpha.22.zip"
         },
         {
           "Id": "VirtoCommerce.Communication",
           "BlobName": "VirtoCommerce.Communication_3.800.0-alpha.17.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.825.0-alpha.820-dev-11685064386-1.zip"
         }
       ],
       "Container": "packages",
