@@ -1,4 +1,4 @@
-- name: vcmp-dev
+- name: vcmp-qa
   gitops: true
   production: false
   servicePlan: F1
@@ -8,7 +8,7 @@
     config:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
-      APPINSIGHTS_INSTRUMENTATIONKEY: 8c4a3d98-a113-4779-9cf7-33a0412a9102
+      APPINSIGHTS_INSTRUMENTATIONKEY: 0e5beb1d-72d4-4515-ba5e-7e478d54cc03
       AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
       AzureAd__Enabled: true
       AzureAd__Priority: 1
@@ -52,7 +52,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -62,18 +62,11 @@
   ingress: {}
   customApps:
     app1:
-      name: storybook
-      enabled: true
-      imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
-      servicePlan: B1
-      type: standalone
-      hostname: vc-shell-storybook.govirto.com
-      probePath: /
-      ingressPath: /
+      enabled: false  
     app2:
       enabled: false
   routes:
-  - host: vcmp-dev-storefront.govirto.com
+  - host: vcmp-qa-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
