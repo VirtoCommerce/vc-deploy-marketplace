@@ -1,4 +1,4 @@
-- name: vcmp-qa
+- name: vcmp-demo
   gitops: true
   production: false
   servicePlan: F1
@@ -8,7 +8,7 @@
     config:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
-      APPINSIGHTS_INSTRUMENTATIONKEY: 0e5beb1d-72d4-4515-ba5e-7e478d54cc03
+      APPINSIGHTS_INSTRUMENTATIONKEY: a86e2a6f-1195-41e9-b157-21ecd8740466
       AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
       AzureAd__Enabled: true
       AzureAd__Priority: 1
@@ -52,7 +52,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-demo-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -66,7 +66,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-qa-storefront.govirto.com
+  - host: vcmp-demo-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
