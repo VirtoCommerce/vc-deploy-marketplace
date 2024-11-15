@@ -8,20 +8,28 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.MarketplaceReviews",
-          "BlobName": "VirtoCommerce.MarketplaceReviews_3.800.0-alpha.17.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.806.0.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceCommissions",
-          "BlobName": "VirtoCommerce.MarketplaceCommissions_3.800.0-alpha.22.zip"
+          "BlobName": "VirtoCommerce.MarketplaceCommissions_3.801.0-alpha.25.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceReviews",
+          "BlobName": "VirtoCommerce.MarketplaceReviews_3.801.0-alpha.20.zip"
+        },
+        {
+          "Id": "VirtoCommerce.Communication",
+          "BlobName": "VirtoCommerce.Communication_3.801.0-alpha.21.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.822.0-alpha.812-dev-11291785719-1.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.825.0-alpha.822-dev-11836886492-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceCommunication",
+          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.800.0-alpha.38.zip"
         }
       ],
       "Container": "packages",
