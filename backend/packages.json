@@ -24,12 +24,12 @@
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.825.0-alpha.826.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceCommunication",
-          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.800.0-alpha.58.zip"
-        },
-        {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.807.0-alpha.255.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceCommunication",
+          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.800.0-alpha.59.zip"
         }
       ],
       "Container": "packages",
