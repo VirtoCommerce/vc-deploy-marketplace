@@ -1,4 +1,4 @@
-- name: vcmp-demo
+- name: vcmp-qa
   gitops: true
   production: false
   servicePlan: F1
@@ -52,13 +52,13 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-demo-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.11.0/vc-theme-b2b-vue-2.11.0.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.12.1/vc-theme-b2b-vue-2.12.1.zip
   ingress: {}
   customApps:
     app1:
@@ -66,7 +66,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-demo-storefront.govirto.com
+  - host: vcmp-qa-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
