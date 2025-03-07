@@ -32,12 +32,12 @@
           "BlobName": "VirtoCommerce.MarketplaceCommunication_3.803.0-alpha.111.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.828.0-alpha.856-redesign-13701794204-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.StateMachine",
           "BlobName": "VirtoCommerce.StateMachine_3.801.0-alpha.21.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.828.0-alpha.853-dev-13724911730-1.zip"
         }
       ],
       "Container": "packages",
