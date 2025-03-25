@@ -8,14 +8,6 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.MarketplaceReviews",
-          "BlobName": "VirtoCommerce.MarketplaceReviews_3.801.0-alpha.20.zip"
-        },
-        {
-          "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.807.0-alpha.255.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceCommissions",
           "BlobName": "VirtoCommerce.MarketplaceCommissions_3.801.0.zip"
         },
@@ -24,20 +16,28 @@
           "BlobName": "VirtoCommerce.Communication_3.802.0.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceCommunication",
-          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.803.0-alpha.109-dev-13305302913-1.zip"
+          "Id": "VirtoCommerce.MarketplaceRegistration",
+          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.803.0-alpha.31.zip"
         },
         {
-          "Id": "VirtoCommerce.StateMachine",
-          "BlobName": "VirtoCommerce.StateMachine_3.800.0.zip"
+          "Id": "VirtoCommerce.MarketplaceReviews",
+          "BlobName": "VirtoCommerce.MarketplaceReviews_3.801.0-alpha.23.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceCommunication",
+          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.803.0-alpha.114.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.827.0.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.828.0-alpha.856-redesign-13861214475-1.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceRegistration",
-          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.802.0.zip"
+          "Id": "VirtoCommerce.Import",
+          "BlobName": "VirtoCommerce.Import_3.807.0-alpha.259.zip"
+        },
+        {
+          "Id": "VirtoCommerce.StateMachine",
+          "BlobName": "VirtoCommerce.StateMachine_3.801.0-alpha.45.zip"
         }
       ],
       "Container": "packages",
