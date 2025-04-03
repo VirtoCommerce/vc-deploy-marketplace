@@ -37,7 +37,7 @@
         },
         {
           "Id": "VirtoCommerce.StateMachine",
-          "BlobName": "VirtoCommerce.StateMachine_3.802.0-alpha.53.zip"
+          "BlobName": "VirtoCommerce.StateMachine_3.801.0.zip"
         }
       ],
       "Container": "packages",
