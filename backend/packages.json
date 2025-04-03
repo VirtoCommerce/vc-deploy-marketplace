@@ -37,7 +37,7 @@
         },
         {
           "Id": "VirtoCommerce.Communication",
-          "BlobName": "VirtoCommerce.Communication_3.804.0-alpha.43.zip"
+          "BlobName": "VirtoCommerce.Communication_3.803.0.zip"
         }
       ],
       "Container": "packages",
