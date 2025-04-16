@@ -28,16 +28,16 @@
           "BlobName": "VirtoCommerce.Communication_3.804.0-alpha.44.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceRegistration",
-          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.804.0-alpha.34.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.828.0-alpha.858-redesign-14405461174-1.zip"
         },
         {
           "Id": "VirtoCommerce.StateMachine",
           "BlobName": "VirtoCommerce.StateMachine_3.802.0-alpha.62-dev-14491507767-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceRegistration",
+          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.804.0-alpha.36-dev-14491769342-1.zip"
         }
       ],
       "Container": "packages",
