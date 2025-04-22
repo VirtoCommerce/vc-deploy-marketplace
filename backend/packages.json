@@ -32,12 +32,12 @@
           "BlobName": "VirtoCommerce.MarketplaceRegistration_3.804.0-alpha.38.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.862-dev-14597287876-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceCommissions",
           "BlobName": "VirtoCommerce.MarketplaceCommissions_3.803.0-alpha.34-dev-14597661411-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.828.0-alpha.859-redesign-14598272000-1.zip"
         }
       ],
       "Container": "packages",
