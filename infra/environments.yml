@@ -33,6 +33,7 @@
       PasswordLogin__Priority: 0
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
+      Search__ElasticSearch8__Server: https://elasticsearch-vc03.govirto.com
       Search__OrderFullTextSearchEnabled: true
       VirtoCommerce__ApplicationInsights__SamplingOptions__Processor: Fixed
       VirtoCommerce__ApplicationInsights__IgnoreSqlTelemetryOptions: null
