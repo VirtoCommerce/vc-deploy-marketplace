@@ -31,6 +31,7 @@
       Notifications__Smtp__Login: apikey
       Notifications__Smtp__Port: 587
       PasswordLogin__Priority: 0
+      Search__Provider: ElasticSearch8
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__ElasticSearch8__Server: https://elasticsearch-vc03.govirto.com
