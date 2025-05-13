@@ -41,11 +41,11 @@
         },
         {
           "Id": "VirtoCommerce.TaskManagement",
-          "BlobName": "VirtoCommerce.TaskManagement_3.902.0-pr-21-93ec.zip"
+          "BlobName": "VirtoCommerce.TaskManagement_3.902.0-pr-21-3a27.zip"
         },
         {
           "Id": "VirtoCommerce.PushMessages",
-          "BlobName": "VirtoCommerce.PushMessages_3.902.0-pr-16-0459.zip"
+          "BlobName": "VirtoCommerce.PushMessages_3.902.0-pr-16-0eec.zip"
         }
       ],
       "Container": "packages",
