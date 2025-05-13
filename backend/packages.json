@@ -40,7 +40,7 @@
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.882-redesign-14979182106-1.zip"
         },
         {
-          Id: "VirtoCommerce.TaskManagement",
+          "Id": "VirtoCommerce.TaskManagement",
           "BlobName": "VirtoCommerce.TaskManagement_3.902.0-pr-21-193d.zip"
         },
         {
