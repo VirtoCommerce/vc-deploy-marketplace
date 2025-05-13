@@ -38,6 +38,14 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.882-redesign-14979182106-1.zip"
+        },
+        {
+          Id: "VirtoCommerce.TaskManagement",
+          "BlobName": "VirtoCommerce.TaskManagement_3.902.0-pr-21-193d.zip"
+        },
+        {
+          "Id": "VirtoCommerce.PushMessages",
+          "BlobName": "VirtoCommerce.PushMessages_3.902.0-pr-16-0459.zip"
         }
       ],
       "Container": "packages",
@@ -160,10 +168,6 @@
         {
           "Id": "VirtoCommerce.ProfileExperienceApiModule",
           "Version": "3.911.0"
-        },
-        {
-          "Id": "VirtoCommerce.PushMessages",
-          "Version": "3.901.0"
         },
         {
           "Id": "VirtoCommerce.Search",
