@@ -36,16 +36,16 @@
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.802.0-alpha.34-redesign-14978144983-1.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.882-redesign-14979182106-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.TaskManagement",
           "BlobName": "VirtoCommerce.TaskManagement_3.902.0-pr-21-250f.zip"
         },
         {
           "Id": "VirtoCommerce.PushMessages",
           "BlobName": "VirtoCommerce.PushMessages_3.902.0-pr-16-0eec.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.882-redesign-15049507772-1.zip"
         }
       ],
       "Container": "packages",
