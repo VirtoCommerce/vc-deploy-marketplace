@@ -40,12 +40,12 @@
           "BlobName": "VirtoCommerce.PushMessages_3.902.0-pr-16-0eec.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.885-redesign-15136126724-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.StateMachine",
           "BlobName": "VirtoCommerce.StateMachine_3.803.0-alpha.74.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.889.zip"
         }
       ],
       "Container": "packages",
