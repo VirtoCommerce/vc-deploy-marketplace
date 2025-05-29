@@ -74,7 +74,7 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.12.1/vc-theme-b2b-vue-2.12.1.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.22.0/vc-theme-b2b-vue-2.22.0.zip
     headers:
       Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
