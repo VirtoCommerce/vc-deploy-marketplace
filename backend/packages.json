@@ -290,10 +290,6 @@
           "Version": "3.807.0"
         },
         {
-          "Id": "VirtoCommerce.TaskManagement",
-          "Version": "3.901.0"
-        },
-        {
           "Id": "VirtoCommerce.Tax",
           "Version": "3.803.0"
         },
