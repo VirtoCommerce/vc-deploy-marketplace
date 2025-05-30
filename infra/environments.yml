@@ -1,4 +1,4 @@
-- name: vcmp-demo
+- name: vcmp-qa
   gitops: true
   production: false
   servicePlan: F1
@@ -21,8 +21,8 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-demo.govirto.com/apps/vendor-portal-new/#/
-      Marketplace__OperatorGroupId: cb9d46f4-3a92-4f3a-b086-db4d50d69478
+      Marketplace__VendorPortalUrl: https://vcmp-qa.govirto.com/apps/vendor-portal-new/#/
+      Marketplace__OperatorGroupId: 52c1cbc0-c9d9-4d2c-978b-d616c7ea857b
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -31,6 +31,7 @@
       Notifications__Smtp__Login: apikey
       Notifications__Smtp__Port: 587
       PasswordLogin__Priority: 0
+      Payments__AuthorizeNet__ApiLogin: 52B9X7vb4
       Payments__Skyflow__tokenURI: https://manage.skyflowapis.com/v1/auth/sa/oauth/token
       Payments__Skyflow__vaultURI: https://ebfc9bee4242.vault.skyflowapis.com
       Payments__Skyflow__gatewayURI: https://ebfc9bee4242.gateway.skyflowapis.com
@@ -51,6 +52,8 @@
     secretConfig:
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
+      Payments__AuthorizeNet__TxnKey: authorizenet-txnkey
+      Payments__AuthorizeNet__SHA2Hash: authorizenet-sha2hash
       Payments__Skyflow__PaymentFormAccount__clientID: skyflow-paymentformaccount-clientid
       Payments__Skyflow__PaymentFormAccount__keyID: skyflow-paymentformaccount-keyid
       Payments__Skyflow__PaymentFormAccount__privateKey: skyflow-paymentformaccount-privatekey
@@ -68,7 +71,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-demo-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -91,7 +94,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-demo-storefront.govirto.com
+  - host: vcmp-qa-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
