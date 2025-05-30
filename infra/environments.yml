@@ -21,7 +21,7 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-demo.govirto.com/apps/vendor-portal/#/
+      Marketplace__VendorPortalUrl: https://vcmp-demo.govirto.com/apps/vendor-portal-new/#/
       Marketplace__OperatorGroupId: cb9d46f4-3a92-4f3a-b086-db4d50d69478
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
@@ -31,11 +31,19 @@
       Notifications__Smtp__Login: apikey
       Notifications__Smtp__Port: 587
       PasswordLogin__Priority: 0
+      Payments__Skyflow__tokenURI: https://manage.skyflowapis.com/v1/auth/sa/oauth/token
+      Payments__Skyflow__vaultURI: https://ebfc9bee4242.vault.skyflowapis.com
+      Payments__Skyflow__gatewayURI: https://ebfc9bee4242.gateway.skyflowapis.com
+      Payments__Skyflow__vaultId: c1aeec61ad7c46c2b724f004a7658b2f
+      Payments__Skyflow__tableName: credit_cards
+      Payments__Skyflow__TargetPaymentMethod: AuthorizeNetPaymentMethod
+      Payments__Skyflow__TargetConnectionRoute: gfb5ce07e91340efac348a2df035c513/xml/v1/request.api
       Search__Provider: ElasticSearch8
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
       Search__ElasticSearch8__Server: https://elasticsearch-vc03.govirto.com
       Search__OrderFullTextSearchEnabled: true
+      Shipping__IsPickupEnabled: true
       VirtoCommerce__ApplicationInsights__SamplingOptions__Processor: Fixed
       VirtoCommerce__ApplicationInsights__IgnoreSqlTelemetryOptions: null
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
@@ -43,6 +51,12 @@
     secretConfig:
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
+      Payments__Skyflow__PaymentFormAccount__clientID: skyflow-paymentformaccount-clientid
+      Payments__Skyflow__PaymentFormAccount__keyID: skyflow-paymentformaccount-keyid
+      Payments__Skyflow__PaymentFormAccount__privateKey: skyflow-paymentformaccount-privatekey
+      Payments__Skyflow__IntegrationsAccount__clientID: skyflow-integrationsaccount-clientid
+      Payments__Skyflow__IntegrationsAccount__keyID: skyflow-integrationsaccount-keyid
+      Payments__Skyflow__IntegrationsAccount__privateKey: skyflow-integrationsaccount-privatekey
   storefront:
     enabled: false
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
@@ -60,12 +74,14 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.12.1/vc-theme-b2b-vue-2.12.1.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-2.23.0-pr-1757-9bc1-9bc1e4f3.zip
+    headers:
+      Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
   customApps:
     app1:
       name: storybook
-      enabled: true
+      enabled: false
       imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
       servicePlan: B1
       type: standalone
