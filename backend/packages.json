@@ -52,12 +52,12 @@
           "BlobName": "VirtoCommerce.MarketplaceRegistration_3.804.0-alpha.41.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.895-redesign-15389230439-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceCommunication",
           "BlobName": "VirtoCommerce.MarketplaceCommunication_3.804.0-alpha.120-dev-15412288749-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.895-redesign-15412438591-1.zip"
         }
       ],
       "Container": "packages",
