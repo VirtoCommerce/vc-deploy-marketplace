@@ -8,10 +8,6 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.MarketplaceCommunication",
-          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.804.0-alpha.116.zip"
-        },
-        {
           "Id": "VirtoCommerce.Communication",
           "BlobName": "VirtoCommerce.Communication_3.804.0-alpha.44.zip"
         },
@@ -58,6 +54,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.895-redesign-15389230439-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceCommunication",
+          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.804.0-alpha.118-dev-15410685233-1.zip"
         }
       ],
       "Container": "packages",
