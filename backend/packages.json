@@ -8,10 +8,6 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.MarketplaceCommunication",
-          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.804.0-alpha.116.zip"
-        },
-        {
           "Id": "VirtoCommerce.Communication",
           "BlobName": "VirtoCommerce.Communication_3.804.0-alpha.44.zip"
         },
@@ -45,7 +41,7 @@
         },
         {
           "Id": "VirtoCommerce.PageBuilderModule",
-          "BlobName": "VirtoCommerce.PageBuilderModule_3.821.0.zip"
+          "BlobName": "VirtoCommerce.PageBuilderModule_3.822.0-pr-81-81ad.zip"
         },
         {
           "Id": "VirtoCommerce.PowerBiReports",
@@ -56,8 +52,12 @@
           "BlobName": "VirtoCommerce.MarketplaceRegistration_3.804.0-alpha.41.zip"
         },
         {
+          "Id": "VirtoCommerce.MarketplaceCommunication",
+          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.804.0-alpha.120-dev-15412288749-1.zip"
+        },
+        {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.895-redesign-15343158249-1.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0-alpha.895-redesign-15412438591-1.zip"
         }
       ],
       "Container": "packages",
