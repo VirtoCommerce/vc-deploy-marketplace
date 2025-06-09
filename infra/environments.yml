@@ -77,8 +77,8 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-2.23.0-pr-1757-9bc1-9bc1e4f3.zip
-      moa-loyalty: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-2.23.0-pr-1757-9bc1-9bc1e4f3.zip
+      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-2.24.0-alpha.1830-vcst-3359-moa-demo.zip
+      moa-loyalty: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-2.24.0-alpha.1830-vcst-3359-moa-demo.zip
     headers:
       Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
