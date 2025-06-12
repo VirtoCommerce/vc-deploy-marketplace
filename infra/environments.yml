@@ -1,7 +1,7 @@
 - name: vcmp-demo
   gitops: true
   production: false
-  servicePlan: F1
+  servicePlan: B1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
@@ -63,7 +63,7 @@
   storefront:
     enabled: false
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
-    servicePlan: F1
+    servicePlan: B1
     config:
       APPINSIGHTS_INSTRUMENTATIONKEY: 1d9f37fe-9616-428a-856c-12ed99a79166
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
