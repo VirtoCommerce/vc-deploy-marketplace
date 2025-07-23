@@ -1,4 +1,4 @@
-- name: vcmp-dev
+- name: vcmp-qa
   gitops: true
   production: false
   servicePlan: F1
@@ -8,7 +8,7 @@
     config:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
-      APPINSIGHTS_INSTRUMENTATIONKEY: 0e5beb1d-72d4-4515-ba5e-7e478d54cc03
+      APPINSIGHTS_INSTRUMENTATIONKEY: a86e2a6f-1195-41e9-b157-21ecd8740466
       AzureAd__ApplicationId: 86d04c35-143d-4d3c-aea2-8608e2186282
       AzureAd__Enabled: true
       AzureAd__Priority: 1
@@ -21,8 +21,8 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-dev.govirto.com/apps/vendor-portal/#/
-      Marketplace__OperatorGroupId: 580a46f9-768f-43eb-b7fd-386c0453e4d4
+      Marketplace__VendorPortalUrl: https://vcmp-qa.govirto.com/apps/vendor-portal/#/
+      Marketplace__OperatorGroupId: 52c1cbc0-c9d9-4d2c-978b-d616c7ea857b
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -71,7 +71,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -84,7 +84,7 @@
   customApps:
     app1:
       name: storybook
-      enabled: true
+      enabled: false
       imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
       servicePlan: B1
       type: standalone
@@ -94,7 +94,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-dev-storefront.govirto.com
+  - host: vcmp-qa-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
