@@ -21,7 +21,7 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-qa.govirto.com/apps/vendor-portal-new/#/
+      Marketplace__VendorPortalUrl: https://vcmp-qa.govirto.com/apps/vendor-portal/#/
       Marketplace__OperatorGroupId: 52c1cbc0-c9d9-4d2c-978b-d616c7ea857b
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
@@ -77,7 +77,7 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://vc3prerelease.blob.core.windows.net/packages/vc-theme-b2b-vue-2.23.0-pr-1757-9bc1-9bc1e4f3.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.26.0/vc-theme-b2b-vue-2.26.0.zip
     headers:
       Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
