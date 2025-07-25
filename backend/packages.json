@@ -32,10 +32,6 @@
           "BlobName": "VirtoCommerce.Import_3.808.0-alpha.271.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.829.0.zip"
-        },
-        {
           "Id": "VirtoCommerce.Communication",
           "BlobName": "VirtoCommerce.Communication_3.804.0.zip"
         },
@@ -58,6 +54,10 @@
         {
           "Id": "VirtoCommerce.StateMachine",
           "BlobName": "VirtoCommerce.StateMachine_3.804.0.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.908.zip"
         }
       ],
       "Container": "packages",
