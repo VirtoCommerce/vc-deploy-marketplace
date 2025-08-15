@@ -58,6 +58,10 @@
         {
           "Id": "VirtoCommerce.Import",
           "BlobName": "VirtoCommerce.Import_3.809.0-alpha.273.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceQuote",
+          "BlobName": "VirtoCommerce.MarketplaceQuote_3.800.0-alpha.3-dev-16988777139-1.zip"
         }
       ],
       "Container": "packages",
