@@ -43,7 +43,6 @@ jobs:
       shell: pwsh
       id: vars
       run: echo "paas_tag=${{ env.PLATFORM_TAG }}-$(git rev-parse --short HEAD)" >> $env:GITHUB_OUTPUT
-      # echo "::set-output name=paas_tag::${{ env.PLATFORM_TAG }}-$(git rev-parse --short HEAD)"
 
     - name: Build platform Image
       run: |
@@ -63,12 +62,12 @@ jobs:
       env:
         TAG: ${{ steps.vars.outputs.paas_tag }}
 
-    # - name: Az config
-    #   run: |
-    #     az config set extension.use_dynamic_install=yes_without_prompt
+    - name: Az config
+      run: |
+        az config set extension.use_dynamic_install=yes_without_prompt
 
-    # - name: Update app
-    #   run: |
-    #     vc-build  CloudEnvSetParameter -EnvironmentName ${{ env.ARGO_APP_NAME }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN }} -HelmParameters platform.image.tag=$TAG
-    #   env:
-    #     TAG: ${{ steps.vars.outputs.paas_tag }}
+    - name: Update app
+      run: |
+        vc-build  CloudEnvSetParameter -EnvironmentName ${{ env.ARGO_APP_NAME }} -CloudToken ${{ secrets.VCMP_PLATFORM_TOKEN }} -HelmParameters platform.image.tag=$TAG
+      env:
+        TAG: ${{ steps.vars.outputs.paas_tag }}
