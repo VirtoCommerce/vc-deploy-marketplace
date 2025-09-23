@@ -33,15 +33,16 @@ jobs:
       run: |
         vc-build InstallModules -PackageManifestPath ./backend/packages.json -ProbingPath ./backend/platform/app_data/modules -DiscoveryPath ./backend/platform/modules --root ./backend/platform -SkipDependencySolving
   
-    - name: Get platfrom version
+    - name: Get platform version
       id: platform-version
       run: |
         echo "PLATFORM_IMAGE=$(cat ./backend/packages.json | jq -r '.PlatformImage')" >> $GITHUB_ENV
         echo "PLATFORM_TAG=$(cat ./backend/packages.json | jq -r '.PlatformImageTag')" >> $GITHUB_ENV
 
     - name: Set outputs
+      shell: pwsh
       id: vars
-      run: echo "::set-output name=paas_tag::${{ env.PLATFORM_TAG }}-$(git rev-parse --short HEAD)"
+      run: echo "paas_tag=${{ env.PLATFORM_TAG }}-$(git rev-parse --short HEAD)" >> $env:GITHUB_OUTPUT
 
     - name: Build platform Image
       run: |
