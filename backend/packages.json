@@ -61,7 +61,7 @@
         },
         {
           "Id": "VirtoCommerce.AiHelperOpenAi",
-          "BlobName": "VirtoCommerce.AiHelperOpenAi_3.800.0-alpha.2-dev-18468490743-1.zip"
+          "BlobName": "VirtoCommerce.AiHelperOpenAi_3.800.0-alpha.3.zip"
         }
       ],
       "Container": "packages",
