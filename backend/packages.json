@@ -62,6 +62,10 @@
         {
           "Id": "VirtoCommerce.AiHelperOpenAi",
           "BlobName": "VirtoCommerce.AiHelperOpenAi_3.800.0-alpha.3.zip"
+        },
+        {
+          "Id": "VirtoCommerce.AiHelperGrokAi",
+          "BlobName": "VirtoCommerce.AiHelperGrokAi_3.800.0-alpha.2-dev-18524139085-1.zip"
         }
       ],
       "Container": "packages",
