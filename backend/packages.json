@@ -1,8 +1,8 @@
 {
   "ManifestVersion": "2.0",
-  "PlatformVersion": "3.913.0",
+  "PlatformVersion": "3.914.0-pr-2953-7c13-vm-1659-system-lib-version-bump-7c13321d",
   "PlatformImage": "ghcr.io/virtocommerce/platform",
-  "PlatformImageTag": "3.913.0",
+  "PlatformImageTag": "3.914.0-pr-2953-7c13-vm-1659-system-lib-version-bump-7c13321d",
   "Sources": [
     {
       "Name": "AzureBlob",
