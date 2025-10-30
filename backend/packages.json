@@ -12,6 +12,10 @@
           "BlobName": "VirtoCommerce.AIDocumentProcessing_3.901.0-pr-6-5f80.zip"
         },
         {
+          "Id": "VirtoCommerce.PageBuilderModule",
+          "BlobName": "VirtoCommerce.PageBuilderModule_3.828.0.zip"
+        },
+        {
           "Id": "VirtoCommerce.PowerBiReports",
           "BlobName": "VirtoCommerce.PowerBiReports_3.801.0-alpha.43.zip"
         },
@@ -260,10 +264,6 @@
         {
           "Id": "VirtoCommerce.Orders",
           "Version": "3.862.0"
-        },
-        {
-          "Id": "VirtoCommerce.PageBuilder",
-          "Version": "3.828.0"
         },
         {
           "Id": "VirtoCommerce.Pages",
