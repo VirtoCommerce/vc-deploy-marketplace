@@ -60,12 +60,12 @@
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.921-dev-19334748453-1.zip"
         },
         {
-          "Id": "VirtoCommerce.AiHelper",
-          "BlobName": "VirtoCommerce.AiHelper_3.800.0-alpha.33.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceRegistration",
           "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.55-dev-19366629784-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.AiHelper",
+          "BlobName": "VirtoCommerce.AiHelper_3.800.0-alpha.34-dev-19366662299-1.zip"
         }
       ],
       "Container": "packages",
