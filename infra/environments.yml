@@ -1,7 +1,7 @@
-- name: vcmp-qa
+- name: vcmp-demo
   gitops: true
   production: false
-  servicePlan: F1
+  servicePlan: B1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
@@ -21,8 +21,8 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-qa.govirto.com/apps/vendor-portal/#/
-      Marketplace__OperatorGroupId: 52c1cbc0-c9d9-4d2c-978b-d616c7ea857b
+      Marketplace__VendorPortalUrl: https://vcmp-demo.govirto.com/apps/vendor-portal/#/
+      Marketplace__OperatorGroupId: cb9d46f4-3a92-4f3a-b086-db4d50d69478
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -63,7 +63,7 @@
   storefront:
     enabled: false
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
-    servicePlan: F1
+    servicePlan: B1
     config:
       APPINSIGHTS_INSTRUMENTATIONKEY: 1d9f37fe-9616-428a-856c-12ed99a79166
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
@@ -71,7 +71,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-demo-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -94,7 +94,7 @@
     app2:
       enabled: false
   routes:
-  - host: vcmp-qa-storefront.govirto.com
+  - host: vcmp-demo-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
@@ -112,6 +112,27 @@
     - path: /externalsignin
       route: platform
     - path: /signin-oidc
+      route: platform
+  - host: vcmp-loyalty-storefront.govirto.com
+    root: moa-loyalty
+    paths:
+    - path: /xapi
+      route: platform
+    - path: /files
+      route: platform
+    - path: /connect/token
+      route: platform
+    - path: /graphql
+      route: platform
+    - path: /revoke/token
+      route: platform
+    - path: /api/files
+      route: platform
+    - path: /externalsignin
+      route: platform
+    - path: /signin-oidc
+      route: platform
+    - path: /signin-google
       route: platform
   protectedParameters:
     - platform.image.tag
