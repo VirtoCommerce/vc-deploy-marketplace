@@ -48,10 +48,6 @@
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.803.0-alpha.50-dev-19366772323-1.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.922-dev-19366740696-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.AiHelperOpenAi",
           "BlobName": "VirtoCommerce.AiHelperOpenAi_3.800.0-alpha.8-dev-19366893622-1.zip"
         },
@@ -66,6 +62,10 @@
         {
           "Id": "VirtoCommerce.AiHelperGrokAi",
           "BlobName": "VirtoCommerce.AiHelperGrokAi_3.800.0-alpha.7-dev-19367381838-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.923.zip"
         }
       ],
       "Container": "packages",
