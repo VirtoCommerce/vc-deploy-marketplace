@@ -99,7 +99,9 @@
       type: standalone
       hostname: vcmp-dev-virto-oz.govirto.com
       probePath: /
-      ingressPath: /  
+      ingressPath: /
+      secretConfig:
+        ANTHROPIC_API_KEY: anthropic-api-key
   routes:
   - host: vcmp-dev-storefront.govirto.com
     root: B2B-store
