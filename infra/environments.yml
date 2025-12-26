@@ -94,7 +94,7 @@
     app2:
       name: virto-oz
       enabled: true
-      imageRepository: ghcr.io/virtocommerce/virto-oz-assistant
+      imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
       servicePlan: B1
       type: standalone
       hostname: vcmp-dev-virto-oz.govirto.com
