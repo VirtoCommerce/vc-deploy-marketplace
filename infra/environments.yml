@@ -92,7 +92,14 @@
       probePath: /
       ingressPath: /  
     app2:
-      enabled: false
+      name: virto-oz
+      enabled: true
+      imageRepository: ghcr.io/virtocommerce/virto-oz-assistant
+      servicePlan: B1
+      type: standalone
+      hostname: vcmp-dev-virto-oz.govirto.com
+      probePath: /
+      ingressPath: /  
   routes:
   - host: vcmp-dev-storefront.govirto.com
     root: B2B-store
