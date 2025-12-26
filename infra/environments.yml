@@ -101,11 +101,11 @@
       probePath: /
       ingressPath: /
       config:
-        VC_PLATFORM_URL: https://vcmp-dev.govirto.com
-        LLM_MODEL: claude-sonnet-4-5-20250929
-        LLM_FAST_MODEL: claude-haiku-4-5-20251001
+        VIRTO_OZ_VC_PLATFORM_URL: https://vcmp-dev.govirto.com
+        VIRTO_OZ_LLM_MODEL: claude-sonnet-4-5-20250929
+        VIRTO_OZ_LLM_FAST_MODEL: claude-haiku-4-5-20251001
       secretConfig:
-        ANTHROPIC_API_KEY: anthropic-api-key
+        VIRTO_OZ_ANTHROPIC_API_KEY: anthropic-api-key
   routes:
   - host: vcmp-dev-storefront.govirto.com
     root: B2B-store
