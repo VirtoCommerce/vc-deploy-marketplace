@@ -100,6 +100,10 @@
       hostname: vcmp-dev-virto-oz.govirto.com
       probePath: /
       ingressPath: /
+      config:
+        VC_PLATFORM_URL: https://vcmp-dev.govirto.com
+        LLM_MODEL: claude-sonnet-4-5-20250929
+        LLM_FAST_MODEL: claude-haiku-4-5-20251001
       secretConfig:
         ANTHROPIC_API_KEY: anthropic-api-key
   routes:
