@@ -100,8 +100,6 @@
       hostname: vcmp-dev-virto-oz.govirto.com
       probePath: /
       ingressPath: /
-      Reload: 1
-      SYSTEM: Reload
       config:
         VIRTO_OZ_VC_PLATFORM_URL: https://vcmp-dev.govirto.com
         VIRTO_OZ_LLM_MODEL: claude-sonnet-4-5-20250929
