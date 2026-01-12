@@ -6,17 +6,6 @@
   "Sources": [
     {
       "Name": "AzureBlob",
-      "Modules": [      
-        {
-          "Id": "VirtoCommerce.AI",
-          "BlobName": "VirtoCommerce.AI_3.800.0.zip"
-        }
-      ],
-      "Container": "modules",
-      "ServiceUri": "https://avvirtowaytemporary.blob.core.windows.net"
-    },
-    {
-      "Name": "AzureBlob",
       "Modules": [
         {
           "Id": "VirtoCommerce.AIDocumentProcessing",
