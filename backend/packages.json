@@ -75,64 +75,8 @@
       "Name": "AzureBlob",
       "Modules": [
         {
-          "Id": "VirtoCommerce.AIDocumentProcessing",
-          "BlobName": "VirtoCommerce.AIDocumentProcessing_3.901.0-pr-6-5f80.zip"
-        },
-        {
-          "Id": "VirtoCommerce.PageBuilderModule",
-          "BlobName": "VirtoCommerce.PageBuilderModule_3.828.0.zip"
-        },
-        {
-          "Id": "VirtoCommerce.PowerBiReports",
-          "BlobName": "VirtoCommerce.PowerBiReports_3.801.0-alpha.43.zip"
-        },
-        {
-          "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.809.0-alpha.273.zip"
-        },
-        {
-          "Id": "VirtoCommerce.StateMachine",
-          "BlobName": "VirtoCommerce.StateMachine_3.805.0-alpha.118.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceRegistration",
-          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.55-dev-19366629784-1.zip"
-        },
-        {
-          "Id": "VirtoCommerce.AiHelper",
-          "BlobName": "VirtoCommerce.AiHelper_3.800.0-alpha.34-dev-19366662299-1.zip"
-        },
-        {
-          "Id": "VirtoCommerce.AiHelperOpenAi",
-          "BlobName": "VirtoCommerce.AiHelperOpenAi_3.800.0-alpha.8-dev-19366893622-1.zip"
-        },
-        {
-          "Id": "VirtoCommerce.Communication",
-          "BlobName": "VirtoCommerce.Communication_3.805.0-alpha.52.zip"
-        },
-        {
-          "Id": "VirtoCommerce.AiHelperGrokAi",
-          "BlobName": "VirtoCommerce.AiHelperGrokAi_3.800.0-alpha.7-dev-19367381838-1.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceQuote",
-          "BlobName": "VirtoCommerce.MarketplaceQuote_3.800.0-alpha.48.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceCommissions",
-          "BlobName": "VirtoCommerce.MarketplaceCommissions_3.804.0-alpha.48.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceCommunication",
-          "BlobName": "VirtoCommerce.MarketplaceCommunication_3.805.0-alpha.137.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceReviews",
-          "BlobName": "VirtoCommerce.MarketplaceReviews_3.803.0-alpha.51.zip"
-        },
-        {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.929.zip"
+          "Id": "VirtoCommerce.AI",
+          "BlobName": "VirtoCommerce.AI_3.800.0.zip"
         }
       ],
       "Container": "modules",
