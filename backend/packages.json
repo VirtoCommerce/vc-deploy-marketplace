@@ -65,7 +65,7 @@
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.928.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.929.zip"
         }
       ],
       "Container": "packages",
@@ -132,7 +132,7 @@
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.928.zip"
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.929.zip"
         }
       ],
       "Container": "modules",
