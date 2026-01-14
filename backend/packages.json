@@ -6,7 +6,7 @@
   "Sources": [
     {
       "Name": "AzureBlob",
-      "Modules": [        
+      "Modules": [
         {
           "Id": "VirtoCommerce.AI",
           "BlobName": "VirtoCommerce.AI_3.801.0-alpha.6.zip"
@@ -34,10 +34,6 @@
         {
           "Id": "VirtoCommerce.MarketplaceRegistration",
           "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.55-dev-19366629784-1.zip"
-        },
-        {
-          "Id": "VirtoCommerce.AiHelper",
-          "BlobName": "VirtoCommerce.AiHelper_3.800.0-alpha.34-dev-19366662299-1.zip"
         },
         {
           "Id": "VirtoCommerce.AiHelperOpenAi",
@@ -70,6 +66,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.929-dev-20993226457-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.AiHelper",
+          "BlobName": "VirtoCommerce.AiHelper_3.800.0-alpha.35.zip"
         }
       ],
       "Container": "packages",
