@@ -6,7 +6,11 @@
   "Sources": [
     {
       "Name": "AzureBlob",
-      "Modules": [
+      "Modules": [        
+        {
+          "Id": "VirtoCommerce.AI",
+          "BlobName": "VirtoCommerce.AI_3.801.0-alpha.6.zip"
+        },
         {
           "Id": "VirtoCommerce.AIDocumentProcessing",
           "BlobName": "VirtoCommerce.AIDocumentProcessing_3.901.0-pr-6-5f80.zip"
@@ -70,17 +74,6 @@
       ],
       "Container": "packages",
       "ServiceUri": "https://vc3prerelease.blob.core.windows.net"
-    },
-    {
-      "Name": "AzureBlob",
-      "Modules": [
-        {
-          "Id": "VirtoCommerce.AI",
-          "BlobName": "VirtoCommerce.AI_3.800.0.zip"
-        }
-      ],
-      "Container": "modules",
-      "ServiceUri": "https://avvirtowaytemporary.blob.core.windows.net"
     },
     {
       "Name": "GithubReleases",
