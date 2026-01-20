@@ -106,6 +106,7 @@
         VIRTO_OZ_VC_PLATFORM_URL: https://vcmp-dev.govirto.com
         VIRTO_OZ_LLM_MODEL: claude-sonnet-4-5-20250929
         VIRTO_OZ_LLM_FAST_MODEL: claude-haiku-4-5-2025100
+        VIRTO_OZ_LANGFUSE_ENABLED: true
         VIRTO_OZ_LANGFUSE_PUBLIC_KEY: "pk-lf-8a69917b-6f8b-4140-af2f-03085800bc12"
         VIRTO_OZ_LANGFUSE_BASE_URL: "https://us.cloud.langfuse.com"
       secretConfig:
