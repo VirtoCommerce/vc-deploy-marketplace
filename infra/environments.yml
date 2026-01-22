@@ -1,7 +1,7 @@
 - name: vcmp-dev
   gitops: true
   production: false
-  servicePlan: F1
+  servicePlan: B1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
