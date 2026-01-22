@@ -95,7 +95,7 @@
       name: virto-oz
       enabled: true
       imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
-      servicePlan: B1
+      servicePlan: S1
       type: standalone
       hostname: vcmp-dev-virto-oz.govirto.com
       probePath: /
