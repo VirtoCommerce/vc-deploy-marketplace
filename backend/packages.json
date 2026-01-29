@@ -17,7 +17,7 @@
         },
         {
           "Id": "VirtoCommerce.PageBuilderModule",
-          "BlobName": "VirtoCommerce.PageBuilderModule_3.834.0.zip"
+          "BlobName": "VirtoCommerce.PageBuilderModule_3.831.0.zip"
         },
         {
           "Id": "VirtoCommerce.PowerBiReports",
@@ -143,11 +143,11 @@
         },
         {
           "Id": "VirtoCommerce.Core",
-          "Version": "3.825.0"
+          "Version": "3.824.0"
         },
         {
           "Id": "VirtoCommerce.Customer",
-          "Version": "3.851.0"
+          "Version": "3.849.0"
         },
         {
           "Id": "VirtoCommerce.CustomerExportImport",
@@ -355,7 +355,7 @@
         },
         {
           "Id": "VirtoCommerce.XCatalog",
-          "Version": "3.943.0"
+          "Version": "3.942.0"
         },
         {
           "Id": "VirtoCommerce.XCMS",
