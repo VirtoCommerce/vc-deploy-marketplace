@@ -103,6 +103,7 @@
       Reload: 1
       SYSTEM: Reload
       config:
+        APPLICATIONINSIGHTS_CONNECTION_STRIG: InstrumentationKey=2b7613d4-b591-4351-a3ee-07ca7e0acd78;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=bbe36693-de1b-4fb4-baf7-de1c4a992f00
         TENANTS__DEV__PLATFORM__URL: https://vcmp-dev.govirto.com
         TENANTS__DEV__PLATFORM__AUTH__CLIENT_ID: 62f437db-98d8-4c80-b660-71e2fef900ea
         VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-dev-virto-oz.govirto.com
