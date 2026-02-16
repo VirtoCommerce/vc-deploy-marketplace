@@ -104,7 +104,6 @@
       SYSTEM: Reload
       config:
         APPLICATIONINSIGHTS_CONNECTION_STRING: InstrumentationKey=2b7613d4-b591-4351-a3ee-07ca7e0acd78;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=bbe36693-de1b-4fb4-baf7-de1c4a992f00
-        OTEL_EXPERIMENTAL_RESOURCE_DETECTORS: otel
         OTEL_LOG_LEVEL: debug
         OTEL_METRIC_EXPORT_INTERVAL: 1000
         LANGFUSE_PUBLIC_KEY: "pk-lf-8a69917b-6f8b-4140-af2f-03085800bc12"
