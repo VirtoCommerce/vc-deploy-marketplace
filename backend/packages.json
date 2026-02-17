@@ -48,16 +48,16 @@
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.803.0-alpha.51.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceRegistration",
-          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.58.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceCommissions",
           "BlobName": "VirtoCommerce.MarketplaceCommissions_3.804.0-alpha.50.zip"
         },
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.830.0-alpha.958-dev-22100509861-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceRegistration",
+          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.59.zip"
         }
       ],
       "Container": "packages",
