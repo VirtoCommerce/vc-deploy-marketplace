@@ -115,10 +115,10 @@
         VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-dev-virto-oz.govirto.com
         VIRTO_OZ_LLM_MODEL: claude-sonnet-4-5-20250929
         VIRTO_OZ_LLM_FAST_MODEL: claude-haiku-4-5-2025100
-      secretConfig:
+      secretConfig:      
+        ANTHROPIC_API_KEY: anthropic-api-key
         LANGFUSE_SECRET_KEY: langfuse-dev-secret-key
         TENANTS__DEV__PLATFORM__AUTH__CLIENT_SECRET: virtooz-platform-client-secret
-        VIRTO_OZ_ANTHROPIC_API_KEY: anthropic-api-key
         VIRTO_OZ_MCP__AUTH__SIGNING_KEY: virtooz-mcp-auth-signing-key
   routes:
   - host: vcmp-dev-storefront.govirto.com
