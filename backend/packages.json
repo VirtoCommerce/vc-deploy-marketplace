@@ -32,10 +32,6 @@
           "BlobName": "VirtoCommerce.Communication_3.805.0-alpha.52.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceRegistration",
-          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.62.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceQuote",
           "BlobName": "VirtoCommerce.MarketplaceQuote_3.800.0-alpha.50.zip"
         },
@@ -62,6 +58,10 @@
         {
           "Id": "VirtoCommerce.ModuleFederation",
           "BlobName": "VirtoCommerce.ModuleFederation_3.803.0.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceRegistration",
+          "BlobName": "VirtoCommerce.MarketplaceRegistration_3.805.0-alpha.64.zip"
         }
       ],
       "Container": "packages",
