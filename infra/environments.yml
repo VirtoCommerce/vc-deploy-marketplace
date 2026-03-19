@@ -108,8 +108,6 @@
         TENANTS__DEV__PLATFORM__URL: https://vcmp-dev.govirto.com
         TENANTS__DEV__PLATFORM__AUTH__CLIENT_ID: 62f437db-98d8-4c80-b660-71e2fef900ea
         VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-dev-virto-oz.govirto.com
-        VIRTO_OZ_LLM_MODEL: claude-sonnet-4-5-20250929
-        VIRTO_OZ_LLM_FAST_MODEL: claude-haiku-4-5-2025100
       secretConfig:      
         ANTHROPIC_API_KEY: anthropic-api-key
         OPENAI_API_KEY: openai-api-key
