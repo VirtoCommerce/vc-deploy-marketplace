@@ -98,7 +98,6 @@
       imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
       servicePlan: B1
       type: standalone
-      hostname: vcmp-dev-virto-oz.govirto.com
       probePath: /
       ingressPath: /
       Reload: 1
