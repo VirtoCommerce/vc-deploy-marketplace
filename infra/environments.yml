@@ -103,6 +103,7 @@
       name: virto-oz
       enabled: true
       imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
+      imageTag: 1.2.0-alpha.444-dev-bc8d0e6a
       servicePlan: B1
       type: standalone
       probePath: /
