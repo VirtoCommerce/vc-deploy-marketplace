@@ -17,6 +17,7 @@
       DOTNET_USE_POLLING_FILE_WATCHER: true
       FrontendSecurity__OrganizationMaintainerRole: org-maintainer
       IdentityOptions__User__MaxPasswordAge: 0
+      Marketplace__AiAssistantUrl: https://vcmp-dev-virto-oz.govirto.com
       Marketplace__UseDefaultOffer: true
       Marketplace__d365__BaseUrl: https://virtmpd3657c7fdb808917f525aos.cloud.retail.dynamics.com
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
@@ -40,6 +41,9 @@
       Payments__Skyflow__tableName: credit_cards
       Payments__Skyflow__TargetPaymentMethod: AuthorizeNetPaymentMethod
       Payments__Skyflow__TargetConnectionRoute: gfb5ce07e91340efac348a2df035c513/xml/v1/request.api
+      PushNotifications__ForceWebSockets: true
+      PushNotifications__RedisBackplane__ChannelName: vcmp-demo-channel
+      PushNotifications__ScalabilityMode: RedisBackplane
       Search__Provider: ElasticSearch8
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
@@ -61,6 +65,7 @@
       Payments__Skyflow__IntegrationsAccount__clientID: skyflow-integrationsaccount-clientid
       Payments__Skyflow__IntegrationsAccount__keyID: skyflow-integrationsaccount-keyid
       Payments__Skyflow__IntegrationsAccount__privateKey: skyflow-integrationsaccount-privatekey
+      PushNotifications__HubUrl: vcmp-demo-push-notifications-hub
   storefront:
     enabled: false
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
@@ -78,8 +83,8 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.33.0/vc-theme-b2b-vue-2.33.0.zip
-      moa-loyalty: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.33.0/vc-theme-b2b-vue-2.33.0.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.38.0/vc-theme-b2b-vue-2.38.0.zip
+      moa-loyalty: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.38.0/vc-theme-b2b-vue-2.38.0.zip
     headers:
       Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
@@ -94,7 +99,29 @@
       probePath: /
       ingressPath: /  
     app2:
-      enabled: false
+      name: virto-oz
+      enabled: true
+      imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
+      servicePlan: B1
+      type: standalone
+      probePath: /
+      ingressPath: /
+      Reload: 1
+      SYSTEM: Reload
+      config:
+        LANGFUSE_PUBLIC_KEY: "pk-lf-8a69917b-6f8b-4140-af2f-03085800bc12"
+        LANGFUSE_BASE_URL: "https://us.cloud.langfuse.com"
+        TENANTS__DEV__ID: "vcmp-demo"
+        TENANTS__DEV__NAME: "Marketplace Demo"
+        TENANTS__DEV__PLATFORM__URL: https://vcmp-demo.govirto.com
+        TENANTS__DEV__PLATFORM__AUTH__CLIENT_ID: 62f437db-98d8-4c80-b660-71e2fef900ea
+        VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-demo-virto-oz.govirto.com
+      secretConfig:      
+        ANTHROPIC_API_KEY: anthropic-api-key
+        OPENAI_API_KEY: openai-api-key
+        LANGFUSE_SECRET_KEY: langfuse-dev-secret-key
+        TENANTS__DEV__PLATFORM__AUTH__CLIENT_SECRET: virtooz-platform-client-secret
+        VIRTO_OZ_MCP__AUTH__SIGNING_KEY: virtooz-mcp-auth-signing-key
   routes:
   - host: vcmp-demo-storefront.govirto.com
     root: B2B-store
@@ -140,5 +167,6 @@
     - platform.image.tag
     #- storefront.image.tag
     #- themes.B2B-store
-    - custom.app1.image.tag
+    - custom.app1.image.tag    
+    - custom.app2.image.tag
   version: 3.211
