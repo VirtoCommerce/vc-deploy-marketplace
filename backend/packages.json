@@ -56,12 +56,12 @@
           "BlobName": "VirtoCommerce.MarketplaceCommissions_3.805.0-alpha.62.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceQuote",
-          "BlobName": "VirtoCommerce.MarketplaceQuote_3.800.0-alpha.53.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceCommunication",
           "BlobName": "VirtoCommerce.MarketplaceCommunication_3.805.0.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceQuote",
+          "BlobName": "VirtoCommerce.MarketplaceQuote_3.800.0-alpha.54.zip"
         }
       ],
       "Container": "packages",
