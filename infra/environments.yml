@@ -98,31 +98,6 @@
       hostname: vc-shell-storybook.govirto.com
       probePath: /
       ingressPath: /  
-    app2:
-      name: virto-oz
-      enabled: true
-      imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
-      imageTag: 1.2.0-alpha.444-dev-bc8d0e6a
-      servicePlan: B1
-      type: standalone
-      probePath: /
-      ingressPath: /
-      Reload: 1
-      SYSTEM: Reload
-      config:
-        LANGFUSE_PUBLIC_KEY: "pk-lf-8a69917b-6f8b-4140-af2f-03085800bc12"
-        LANGFUSE_BASE_URL: "https://us.cloud.langfuse.com"
-        TENANTS__DEV__ID: "vcmp-demo"
-        TENANTS__DEV__NAME: "Marketplace Demo"
-        TENANTS__DEV__PLATFORM__URL: https://vcmp-demo.govirto.com
-        TENANTS__DEV__PLATFORM__AUTH__CLIENT_ID: 62f437db-98d8-4c80-b660-71e2fef900ea
-        VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-demo-virto-oz.govirto.com
-      secretConfig:      
-        ANTHROPIC_API_KEY: anthropic-api-key
-        OPENAI_API_KEY: openai-api-key
-        LANGFUSE_SECRET_KEY: langfuse-dev-secret-key
-        TENANTS__DEV__PLATFORM__AUTH__CLIENT_SECRET: virtooz-platform-client-secret
-        VIRTO_OZ_MCP__AUTH__SIGNING_KEY: virtooz-mcp-auth-signing-key
   routes:
   - host: vcmp-demo-storefront.govirto.com
     root: B2B-store
