@@ -4,7 +4,6 @@
   servicePlan: B1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
-    imageTag: 3.920.0-e09352c
     sqlReplica: false
     config:
       ASPNETCORE_ENVIRONMENT: Development
