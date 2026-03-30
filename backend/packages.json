@@ -44,10 +44,6 @@
           "BlobName": "VirtoCommerce.MarketplaceQuote_3.800.0.zip"
         },
         {
-          "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.810.0-alpha.294.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceReviews",
           "BlobName": "VirtoCommerce.MarketplaceReviews_3.804.0-alpha.62.zip"
         },
@@ -58,6 +54,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.831.0-alpha.989.zip"
+        },
+        {
+          "Id": "VirtoCommerce.Import",
+          "BlobName": "VirtoCommerce.Import_3.1000.0-alpha.295.zip"
         }
       ],
       "Container": "packages",
