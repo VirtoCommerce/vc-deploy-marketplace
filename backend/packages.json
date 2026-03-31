@@ -57,7 +57,7 @@
         },
         {
           "Id": "VirtoCommerce.MarketplaceCommissions",
-          "BlobName": "VirtoCommerce.MarketplaceCommissions_3.1001.0-alpha.64.zip"
+          "BlobName": "VirtoCommerce.MarketplaceCommissions_3.1000.0.zip"
         }
       ],
       "Container": "packages",
