@@ -55,6 +55,7 @@
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
       VirtoCommerce__SampleDataUrl: https://vc3prerelease.blob.core.windows.net/packages/clothing-and-electronics_3_0_2.zip
     secretConfig:
+      APPLICATIONINSIGHTS_CONNECTION_STRING: vcmp-dev-appinsights-connection-string
       Notifications__SendGrid__ApiKey: sendkey
       Marketplace__d365__ClientSecret: d365clientsecret
       Payments__AuthorizeNet__TxnKey: authorizenet-txnkey
@@ -83,8 +84,8 @@
       VirtoCommerce__DefaultStore: B2B-store
       SYSTEM: Reload
     themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.38.0/vc-theme-b2b-vue-2.38.0.zip
-      moa-loyalty: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.38.0/vc-theme-b2b-vue-2.38.0.zip
+      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.44.0/vc-theme-b2b-vue-2.44.0.zip
+      moa-loyalty: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.44.0/vc-theme-b2b-vue-2.44.0.zip
     headers:
       Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
