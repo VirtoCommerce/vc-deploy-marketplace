@@ -1,7 +1,7 @@
-- name: vcmp-dev
+- name: vcmp-qa
   gitops: true
   production: false
-  servicePlan: B1
+  servicePlan: F1
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
@@ -22,8 +22,8 @@
       Marketplace__d365__Tenant: 16d0ce93-4497-4fa4-89dd-bc2c74bdf65e
       Marketplace__MasterCatalogId: 5aa50aaea01544529a6b6d576a668439
       Marketplace__StoreId: B2B-store
-      Marketplace__VendorPortalUrl: https://vcmp-dev.govirto.com/apps/vendor-portal/#/
-      Marketplace__OperatorGroupId: 580a46f9-768f-43eb-b7fd-386c0453e4d4
+      Marketplace__VendorPortalUrl: https://vcmp-qa.govirto.com/apps/vendor-portal/#/
+      Marketplace__OperatorGroupId: 52c1cbc0-c9d9-4d2c-978b-d616c7ea857b
       Notifications__DefaultSender: azure_25da07ed75daacae20578a7a7dc58541@azure.com
       Notifications__Gateway: SendGrid
       Notifications__SmsDefaultSender: +17012510519
@@ -40,9 +40,6 @@
       Payments__Skyflow__tableName: credit_cards
       Payments__Skyflow__TargetPaymentMethod: AuthorizeNetPaymentMethod
       Payments__Skyflow__TargetConnectionRoute: gfb5ce07e91340efac348a2df035c513/xml/v1/request.api
-      PushNotifications__ForceWebSockets: true
-      PushNotifications__RedisBackplane__ChannelName: vcmp-dev-channel
-      PushNotifications__ScalabilityMode: RedisBackplane
       Search__Provider: ElasticSearch8
       Search__ElasticSearch__Server: https://elasticsearch-vc03.govirto.com
       Search__ElasticSearch__EnableCompatibilityMode: true
@@ -65,7 +62,6 @@
       Payments__Skyflow__IntegrationsAccount__clientID: skyflow-integrationsaccount-clientid
       Payments__Skyflow__IntegrationsAccount__keyID: skyflow-integrationsaccount-keyid
       Payments__Skyflow__IntegrationsAccount__privateKey: skyflow-integrationsaccount-privatekey
-      PushNotifications__HubUrl: vcmp-dev-push-notifications-hub
   storefront:
     enabled: false
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
@@ -77,7 +73,7 @@
       CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
       Reload: 4
       SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.govirto.com/
+      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-qa-storefront.govirto.com/
       VirtoCommerce__SendAccountConfirmation: true
       VirtoCommerce__Endpoint__Password: Password1
       VirtoCommerce__DefaultStore: B2B-store
@@ -90,7 +86,7 @@
   customApps:
     app1:
       name: storybook
-      enabled: true
+      enabled: false
       imageRepository: ghcr.io/virtocommerce/vc-shell-storybook
       servicePlan: B1
       type: standalone
@@ -98,33 +94,9 @@
       probePath: /
       ingressPath: /  
     app2:
-      name: virto-oz
-      enabled: true
-      imageRepository: virtopaasregistrymain.azurecr.io/vcmp/virto-oz
-      servicePlan: B1
-      type: standalone
-      probePath: /
-      ingressPath: /
-      Reload: 1
-      SYSTEM: Reload
-      config:
-        LANGFUSE_PUBLIC_KEY: "pk-lf-8a69917b-6f8b-4140-af2f-03085800bc12"
-        LANGFUSE_BASE_URL: "https://us.cloud.langfuse.com"
-        OTEL_EXPERIMENTAL_RESOURCE_DETECTORS: otel
-        TENANTS__DEV__ID: "vcmp-dev"
-        TENANTS__DEV__NAME: "Marketplace Development"
-        TENANTS__DEV__PLATFORM__URL: https://vcmp-dev.govirto.com
-        TENANTS__DEV__PLATFORM__AUTH__CLIENT_ID: 62f437db-98d8-4c80-b660-71e2fef900ea
-        VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-dev-virto-oz.govirto.com
-      secretConfig:
-        ANTHROPIC_API_KEY: anthropic-api-key
-        APPLICATIONINSIGHTS_CONNECTION_STRING: vcmp-dev-appinsights-connection-string
-        OPENAI_API_KEY: openai-api-key
-        LANGFUSE_SECRET_KEY: langfuse-dev-secret-key
-        TENANTS__DEV__PLATFORM__AUTH__CLIENT_SECRET: virtooz-platform-client-secret
-        VIRTO_OZ_MCP__AUTH__SIGNING_KEY: virtooz-mcp-auth-signing-key
+      enabled: false
   routes:
-  - host: vcmp-dev-storefront.govirto.com
+  - host: vcmp-qa-storefront.govirto.com
     root: B2B-store
     paths:
     - path: /xapi
@@ -147,6 +119,5 @@
     - platform.image.tag
     #- storefront.image.tag
     #- themes.B2B-store
-    - custom.app1.image.tag    
-    - custom.app2.image.tag
+    - custom.app1.image.tag
   version: 3.211
