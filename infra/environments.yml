@@ -49,6 +49,8 @@
       Search__ElasticSearch8__Server: https://elasticsearch-vc03.govirto.com
       Search__OrderFullTextSearchEnabled: true
       Shipping__IsPickupEnabled: true
+      VirtoCommerce__AI__ChatbotUrl: https://vcmp-dev-virto-oz.govirto.com
+      VirtoCommerce__AI__Title: Virto OZ
       VirtoCommerce__ApplicationInsights__SamplingOptions__Processor: Fixed
       VirtoCommerce__ApplicationInsights__IgnoreSqlTelemetryOptions: null
       VirtoCommerce__LocalUploadFolderPath: /opt/virtocommerce/platform/wwwroot/cms-content
