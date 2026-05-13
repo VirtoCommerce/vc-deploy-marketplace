@@ -117,6 +117,10 @@
         TENANTS__DEV__NAME: "Marketplace Development"
         TENANTS__DEV__PLATFORM__URL: https://vcmp-dev.govirto.com
         TENANTS__DEV__PLATFORM__AUTH__CLIENT_ID: 62f437db-98d8-4c80-b660-71e2fef900ea
+        TENANTS__VCST_AI__ID: "vcst-ai"
+        TENANTS__VCST_AI__NAME: "AI Demo"
+        TENANTS__VCST_AI__PLATFORM__URL: https://vcst-ai.govirto.com
+        TENANTS__VCST_AI__PLATFORM__AUTH__CLIENT_ID: 96c4051f-4711-4d5b-98a9-357ac331ce5a
         VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-dev-virto-oz.govirto.com
       secretConfig:
         ANTHROPIC_API_KEY: anthropic-api-key
@@ -124,6 +128,7 @@
         OPENAI_API_KEY: openai-api-key
         LANGFUSE_SECRET_KEY: langfuse-dev-secret-key
         TENANTS__DEV__PLATFORM__AUTH__CLIENT_SECRET: virtooz-platform-client-secret
+        TENANTS__VCST_AI__PLATFORM__AUTH__CLIENT_SECRET: virtooz-vcst-ai-platform-client-secret
         VIRTO_OZ_MCP__AUTH__SIGNING_KEY: virtooz-mcp-auth-signing-key
   routes:
   - host: vcmp-dev-storefront.govirto.com
