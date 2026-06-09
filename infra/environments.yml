@@ -5,6 +5,10 @@
   platform:
     imageRepository: virtopaasregistrymain.azurecr.io/vcmp/platform
     sqlReplica: false
+    headers:
+      Cross-Origin-Resource-Policy: cross-origin
+      Cross-Origin-Opener-Policy: unsafe-none
+      Cross-Origin-Embedder-Policy: unsafe-none
     config:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
@@ -70,25 +74,6 @@
       PushNotifications__HubUrl: vcmp-dev-push-notifications-hub
   storefront:
     enabled: false
-    imageRepository: virtopaasregistrymain.azurecr.io/vcmp/storefront
-    servicePlan: F1
-    config:
-      APPINSIGHTS_INSTRUMENTATIONKEY: 1d9f37fe-9616-428a-856c-12ed99a79166
-      ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
-      ASPNETCORE_ENVIRONMENT: Development
-      CookieAuthenticationOptions__ExpireTimeSpan: 12:00:00
-      Reload: 4
-      SnapshotCollectorConfiguration__IsEnabled: false
-      VirtoCommerce__AppSettings__GoogleAnalytics__DomainName: https://vcmp-dev-storefront.govirto.com/
-      VirtoCommerce__SendAccountConfirmation: true
-      VirtoCommerce__Endpoint__Password: Password1
-      VirtoCommerce__DefaultStore: B2B-store
-      SYSTEM: Reload
-    themes:
-      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.44.0/vc-theme-b2b-vue-2.44.0.zip
-    headers:
-      Cross-Origin-Embedder-Policy: unsafe-none
-      Cross-Origin-Resource-Policy: cross-origin
   ingress: {}
   customApps:
     app1:
