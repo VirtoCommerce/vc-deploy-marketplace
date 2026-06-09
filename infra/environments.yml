@@ -74,6 +74,8 @@
       PushNotifications__HubUrl: vcmp-dev-push-notifications-hub
   storefront:
     enabled: false
+    themes:
+      B2B-store: https://github.com/VirtoCommerce/vc-frontend/releases/download/2.44.0/vc-theme-b2b-vue-2.44.0.zip
   ingress: {}
   customApps:
     app1:
