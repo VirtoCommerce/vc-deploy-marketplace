@@ -142,10 +142,6 @@
           "Version": "3.1003.0"
         },
         {
-          "Id": "VirtoCommerce.Contentful",
-          "Version": "3.805.0"
-        },
-        {
           "Id": "VirtoCommerce.Contracts",
           "Version": "3.1003.0"
         },
