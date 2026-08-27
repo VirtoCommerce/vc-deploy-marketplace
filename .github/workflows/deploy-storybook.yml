@@ -10,14 +10,14 @@ on:
 
 jobs:
   gitops:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       ARGO_APP_NAME: vcmp-dev
       STORYBOOK_TAG: ''
       CLOUD_URL: https://portal.virtocommerce.cloud
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
    
       - name: Install vc-build
         run: |
