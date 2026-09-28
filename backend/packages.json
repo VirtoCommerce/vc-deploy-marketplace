@@ -223,7 +223,7 @@
         },
         {
           "Id": "VirtoCommerce.Loyalty",
-          "Version": "3.1004.0"
+          "Version": "3.1008.0"
         },
         {
           "Id": "VirtoCommerce.LuceneSearch",
