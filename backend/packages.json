@@ -16,10 +16,6 @@
           "BlobName": "VirtoCommerce.AIDocumentProcessing_3.902.0-pr-8-2047.zip"
         },
         {
-          "Id": "VirtoCommerce.Import",
-          "BlobName": "VirtoCommerce.Import_3.1002.0-alpha.312.zip"
-        },
-        {
           "Id": "VirtoCommerce.ModuleFederation",
           "BlobName": "VirtoCommerce.ModuleFederation_3.1000.0.zip"
         },
@@ -70,6 +66,10 @@
         {
           "Id": "VirtoCommerce.CatalogQuality",
           "BlobName": "VirtoCommerce.CatalogQuality_3.1000.0-alpha.4.zip"
+        },
+        {
+          "Id": "VirtoCommerce.Import",
+          "BlobName": "VirtoCommerce.Import_3.1002.0-alpha.322.zip"
         }
       ],
       "Container": "packages",
