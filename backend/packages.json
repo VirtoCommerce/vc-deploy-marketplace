@@ -70,6 +70,10 @@
         {
           "Id": "VirtoCommerce.CatalogQuality",
           "BlobName": "VirtoCommerce.CatalogQuality_3.1000.0-alpha.6.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceQuality",
+          "BlobName": "VirtoCommerce.MarketplaceQuality_3.1000.0-alpha.3.zip"
         }
       ],
       "Container": "packages",
