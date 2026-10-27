@@ -68,12 +68,12 @@
           "BlobName": "VirtoCommerce.CatalogQuality_3.1000.0-alpha.14-dev-39925486472-1.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceQuality",
-          "BlobName": "VirtoCommerce.MarketplaceQuality_3.1000.0-alpha.6-dev-39957698415-1.zip"
-        },
-        {
           "Id": "VirtoCommerce.MarketplaceVendor",
           "BlobName": "VirtoCommerce.MarketplaceVendor_3.1002.0-alpha.1032-dev-40341977430-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceQuality",
+          "BlobName": "VirtoCommerce.MarketplaceQuality_3.1000.0-alpha.7-dev-40498414655-1.zip"
         }
       ],
       "Container": "packages",
