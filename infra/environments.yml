@@ -109,7 +109,7 @@
         TENANTS__VCST_AI__NAME: "AI Demo"
         TENANTS__VCST_AI__PLATFORM__URL: https://vcst-ai.govirto.com
         TENANTS__VCST_AI__PLATFORM__AUTH__CLIENT_ID: 96c4051f-4711-4d5b-98a9-357ac331ce5a
-        VIRTO_OZ_CORS_ORIGINS: https://vcmp-dev.govirto.com
+        VIRTO_OZ_CORS_ORIGINS: '["https://vcmp-dev.govirto.com"]'
         VIRTO_OZ_MCP__AUTH__BASE_URL: https://vcmp-dev-virto-oz.govirto.com
       secretConfig:
         ANTHROPIC_API_KEY: anthropic-api-key
