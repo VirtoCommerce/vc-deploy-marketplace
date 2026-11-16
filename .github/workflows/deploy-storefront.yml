@@ -8,6 +8,11 @@ on:
     branches: 
       - 'vcmp-*'
 
+env:
+  # vc-build ships with rollForward=LatestMajor: on runners with .NET 11 it crashes in NukeBuild's type initializer.
+  # Major keeps it on the .NET 10 runtime it targets (same as VirtoCommerce/.github actions/setup-vcbuild).
+  DOTNET_ROLL_FORWARD: Major
+
 jobs:
   gitops-publish-storefront:
     runs-on: ubuntu-20.04
