@@ -44,10 +44,6 @@
           "BlobName": "VirtoCommerce.MarketplaceReturn_3.1000.0-alpha.16.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceVendor",
-          "BlobName": "VirtoCommerce.MarketplaceVendor_3.1002.0-alpha.1034.zip"
-        },
-        {
           "Id": "VirtoCommerce.Communication",
           "BlobName": "VirtoCommerce.Communication_3.1001.0-alpha.72.zip"
         },
@@ -74,6 +70,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceCommissions",
           "BlobName": "VirtoCommerce.MarketplaceCommissions_3.1001.0-alpha.82-dev-43846341589-1.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceVendor",
+          "BlobName": "VirtoCommerce.MarketplaceVendor_3.1002.0-alpha.1036-dev-44254570249-1.zip"
         }
       ],
       "Container": "packages",
