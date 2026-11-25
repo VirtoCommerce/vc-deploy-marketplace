@@ -28,10 +28,6 @@
           "BlobName": "VirtoCommerce.MarketplaceImport_3.1000.0-alpha.13-dev-34831782535-1.zip"
         },
         {
-          "Id": "VirtoCommerce.MarketplaceReturn",
-          "BlobName": "VirtoCommerce.MarketplaceReturn_3.1000.0-alpha.16.zip"
-        },
-        {
           "Id": "VirtoCommerce.Communication",
           "BlobName": "VirtoCommerce.Communication_3.1001.0-alpha.72.zip"
         },
@@ -70,6 +66,10 @@
         {
           "Id": "VirtoCommerce.MarketplaceQuality",
           "BlobName": "VirtoCommerce.MarketplaceQuality_3.1000.0-alpha.20.zip"
+        },
+        {
+          "Id": "VirtoCommerce.MarketplaceReturn",
+          "BlobName": "VirtoCommerce.MarketplaceReturn_3.1000.0-alpha.21.zip"
         }
       ],
       "Container": "packages",
